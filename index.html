@@ -16,10 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-body bg-primary text-white">
+<body class="font-body bg-primary text-white overflow-x-hidden">
 
     <!-- Custom cursor pointer -->
-    <div class="cursor hidden md:block"></div>
+    <div class="cursor hidden md:block z-50"></div>
 
     <header class="fixed w-screen bg-primary">
         <div class="container mx-auto px-8 md:px-14 flex justify-between py-8">
@@ -31,11 +31,11 @@
                 <span class="line"></span>
             </div>
             <ul class="hidden md:flex text-base space-x-12">
-                <li class="hover:text-yellow-100 duration-300">Work</li>
-                <li class="hover:text-yellow-100 duration-300">About</li>
-                <li class="hover:text-yellow-100 duration-300">Services</li>
-                <li class="hover:text-yellow-100 duration-300">Products</li>
-                <li class="hover:text-yellow-100 duration-300">Contact</li>
+                <li class="cursor-pointer">Work</li>
+                <li class="cursor-pointer">About</li>
+                <li class="cursor-pointer">Services</li>
+                <li class="cursor-pointer">Products</li>
+                <li class="cursor-pointer">Contact</li>
             </ul>
 
             <nav class="absolute top-0 bottom-0 w-screen h-screen md:hidden bg-primary" id="drawer">
@@ -87,7 +87,7 @@
         const cursor = document.querySelector('.cursor'); // Select cursor div
 
         document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: " + (e.pageY - 12) + "px; left: " + (e.pageX - 12) + "px;")
+            cursor.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 7) + "px;")
         }, 100); // Follow mouse pointer
 
         document.addEventListener('click', () => {
