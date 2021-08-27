@@ -84,3 +84,24 @@ html {
   border: 1px solid skyblue;
 }
 /* END */
+
+
+/* Text Selection */
+::-moz-selection{
+  color: skyblue;
+}
+
+::selection {
+  color: skyblue;
+}
+/* END */
+
+/* Text outline */
+.text-outline {
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+/* END */
