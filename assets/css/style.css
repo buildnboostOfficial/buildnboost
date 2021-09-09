@@ -105,3 +105,18 @@ html {
      1px 1px 0 #000;
 }
 /* END */
+
+/* HERE SECTION VIDEO */
+#video {
+  position: absolute;
+  top: -100%;
+  left: 0;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .come-in {
+    animation: wipe-enter 1s 1;
+  }
+}
+/* END */
