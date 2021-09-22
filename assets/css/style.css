@@ -88,11 +88,11 @@ html {
 
 /* Text Selection */
 ::-moz-selection{
-  color: skyblue;
+  color: rgba(147, 197, 253, var(--tw-text-opacity));
 }
 
 ::selection {
-  color: skyblue;
+  color: rgba(147, 197, 253, var(--tw-text-opacity));
 }
 /* END */
 

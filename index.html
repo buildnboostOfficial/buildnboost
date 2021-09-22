@@ -43,17 +43,17 @@
                     <div class="flex h-full flex-col justify-center text-4xl space-y-8 px-12">
                         <span class="text-base text-gray-300">Menu</span>
                         <ul class="flex flex-col justify-center text-4xl space-y-4">
-                            <li class="hover:text-yellow-100 duration-300">Work</li>
-                            <li class="hover:text-yellow-100 duration-300">About</li>
-                            <li class="hover:text-yellow-100 duration-300">Services</li>
-                            <li class="hover:text-yellow-100 duration-300">Products</li>
-                            <li class="hover:text-yellow-100 duration-300">Contact</li>
+                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Work</li>
+                            <li class="hover:text-blue-300 duration-300 cursor-pointer">About</li>
+                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Services</li>
+                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Products</li>
+                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Contact</li>
                         </ul>
                         <div class="flex flex-col">
                             <span class="text-base text-gray-300">Get In Touch</span>
                             <div>
                                 <a href="mailto:buildnboost@gmail.com"
-                                    class="p-2 bg-white text-black text-base">buildnboost@gmail.com</a>
+                                    class="p-2 bg-white text-black text-base rounded-sm hover:scale-125 duration-500">buildnboost@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     Full-service digital agency specialized in building websites & mobile apps.
                 </p>
             </div>
-            <div class="relative hidden flex-1 md:flex items-center justify-center">
+            <div class="relative hidden flex-1 lg:flex items-center justify-center">
                 <div class="absolute right-[-100px] w-full h-[444px] bg-gray-400 m-2 rounded-lg" id="video"></div>
             </div>
         </section>
@@ -83,10 +83,10 @@
                     </div>
                 </div>
 
-                <div class="flex-1 grid grid-cols-2 justify-items-stretch gap-12 px-8 md:px-24 mt-12">
-                    <div class="flex flex-col">
+                <div class="flex-1 grid md:grid-cols-2 justify-items-stretch gap-12 px-8 md:px-24 mt-12">
+                    <div class="group flex flex-col">
                         <div
-                            class="group flex items-center justify-center bg-red-200 h-[292px] rounded-lg hover:bg-gray-500 hover:bg-opacity-20 duration-300 cursor-pointer">
+                            class="flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
                             <div
                                 class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
                                 <span class="font-medium text-sm">View<br />Case</span>
@@ -104,9 +104,9 @@
                         </div>
                         <span class="text-3xl font-medium mt-4">Indo Italian Style Based Pizza Brand</span>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="group flex flex-col">
                         <div
-                            class="group flex items-center justify-center bg-red-200 h-[292px] rounded-lg hover:bg-gray-500 hover:bg-opacity-20 duration-300 cursor-pointer">
+                            class="flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
                             <div
                                 class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
                                 <span class="font-medium text-sm">View<br />Case</span>
@@ -129,11 +129,15 @@
 
         <section class="bg-primary">
             <div class="flex flex-col justify-between py-12">
-                <div class="flex pl-8 md:pl-24">
+                <div class="flex flex-1 items-center space-x-6 pl-8 md:pl-24">
                     <span class="text-3xl stroke-current">What We Do</span>
+                    <div class="flex-1 bg-gray-200 opacity-70">
+                        <hr class="border border-gray-400 opacity-70 w-1/2" />
+                    </div>
                 </div>
 
-                <div class="grid grid-cols-3 items-stretch gap-8 px-8 md:px-24 mt-12">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-4 lg:gap-8 px-8 md:px-14 lg:px-24 mt-12">
                     <div class="bg-card-border rounded-lg p-[2px]">
                         <div class="h-full flex flex-col justify-center space-y-6 bg-card rounded-lg py-12 px-6">
                             <img src="/assets/images/web.svg" alt="" class="w-20">
@@ -173,6 +177,18 @@
                             <a>Know More</a>
                         </div>
                     </div>
+                    <div class="bg-card-border rounded-lg lg:col-span-3 p-[2px]">
+                        <div class="h-full flex flex-col justify-center space-y-6 bg-card rounded-lg py-12 px-6">
+                            <img src="/assets/images/web.svg" alt="" class="w-20">
+                            <span class="font-bold text-3xl">ReadyMade Solutions</span>
+                            <p class="text-sm leading-6 tracking-wide">
+                                Create online business solutions and web based SaaS products with custom websites and
+                                responsive user friendly
+                                development.
+                            </p>
+                            <a>View Pricing</a>
+                        </div>
+                    </div>
                 </div>
                 <!-- <div class="grid grid-cols-3 gap-8 mx-24 mt-8 bg-card-border rounded-lg p-[2px]">
                     <div class="bg-card rounded-lg py-12 px-6">
@@ -194,14 +210,14 @@
     <footer>
         <section class="px-8 md:px-14 flex items-center h-screen bg-black">
             <div class="container mx-auto md:mx-[60px] flex flex-col">
-                <span class="text-xl md:text-7xl font-medium">Got A Project?</span>
-                <span class="text-xl md:text-7xl underline">Tell us about it</span>
+                <span class="text-4xl md:text-7xl font-medium">Got A Project?</span>
+                <span class="text-4xl md:text-7xl underline">Tell us about it</span>
 
-                <div class="flex justify-end mt-[92px]">
+                <div class="flex md:justify-end mt-[46px] md:mt-[92px]">
                     <span class="text-lg md:text-xl underline">contact@buildnboost.com</span>
                 </div>
 
-                <div class="flex items-end justify-between mt-[14px]">
+                <div class="flex flex-col md:flex-row md:items-end justify-between space-y-4 mt-[14px]">
                     <div class="flex flex-col space-y-5">
                         <span class="text-xl md:text-3xl font-bold">buildnboost.</span>
                         <span class="text-xs md:text-sm font-medium opacity-70">7, Pearl Palace CHS, Agarkar
@@ -210,15 +226,23 @@
                         <a href="" class="text-xs md:text-sm font-medium opacity-70">Sitemap</a>
                     </div>
 
-                    <div class="grid grid-cols-4 gap-y-12 gap-x-16">
-                        <a href="" class="text-lg md:text-xl font-medium">Facebook</a>
-                        <a href="" class="text-lg md:text-xl font-medium">Instagram</a>
-                        <a href="" class="text-lg md:text-xl font-medium">Twitter</a>
-                        <a href="" class="text-lg md:text-xl font-medium">LinkedIn</a>
-                        <a href="" class="text-lg md:text-xl font-medium">Dribble</a>
-                        <a href="" class="text-lg md:text-xl font-medium">Behance</a>
-                        <a href="" class="text-lg md:text-xl font-medium">Youtube</a>
-                        <a href="" class="text-lg md:text-xl font-medium">Medium</a>
+                    <div class="hidden md:grid grid-cols-4 gap-y-12 gap-x-16">
+                        <a href="https://facebook.com" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Facebook</a>
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Instagram</a>
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Twitter</a>
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">LinkedIn</a>
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Dribble</a>
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Behance</a>
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Youtube</a>
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Medium</a>
                     </div>
                 </div>
             </div>
