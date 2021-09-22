@@ -21,70 +21,134 @@
     <!-- Custom cursor pointer -->
     <div class="cursor hidden md:block z-50"></div>
 
-    <header class="fixed w-screen bg-primary">
-        <div class="container mx-auto px-8 md:px-14 flex justify-between py-8">
-            <a class="font-bold text-2xl md:text-3xl z-50">
-                buildnboost.
-            </a>
-            <div class="hamburger md:hidden z-50" id="hamburger-1">
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-            <ul class="hidden md:flex text-base space-x-12">
-                <li class="cursor-pointer">Work</li>
-                <li class="cursor-pointer">About</li>
-                <li class="cursor-pointer">Services</li>
-                <li class="cursor-pointer">Products</li>
-                <li class="cursor-pointer">Contact</li>
-            </ul>
+    <div class="relative">
+        <header class="sticky top-0 w-screen bg-primary z-50">
+            <div class="container mx-auto px-8 md:px-14 flex justify-between py-8">
+                <a class="font-bold text-2xl md:text-3xl z-50">
+                    buildnboost.
+                </a>
+                <div class="hamburger md:hidden z-50" id="hamburger-1">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <ul class="hidden md:flex text-base space-x-12">
+                    <li class="cursor-pointer">Work</li>
+                    <li class="cursor-pointer">About</li>
+                    <li class="cursor-pointer">Services</li>
+                    <li class="cursor-pointer">Products</li>
+                    <li class="cursor-pointer">Contact</li>
+                </ul>
 
-            <nav class="absolute top-0 bottom-0 w-screen h-screen md:hidden bg-primary" id="drawer">
-                <div class="flex h-full flex-col justify-center text-4xl space-y-8 px-12">
-                    <span class="text-base text-gray-300">Menu</span>
-                    <ul class="flex flex-col justify-center text-4xl space-y-4">
-                        <li class="hover:text-yellow-100 duration-300">Work</li>
-                        <li class="hover:text-yellow-100 duration-300">About</li>
-                        <li class="hover:text-yellow-100 duration-300">Services</li>
-                        <li class="hover:text-yellow-100 duration-300">Products</li>
-                        <li class="hover:text-yellow-100 duration-300">Contact</li>
-                    </ul>
-                    <div class="flex flex-col">
-                        <span class="text-base text-gray-300">Get In Touch</span>
-                        <div>
-                            <a href="mailto:buildnboost@gmail.com"
-                                class="p-2 bg-white text-black text-base">buildnboost@gmail.com</a>
+                <nav class="absolute top-0 bottom-0 w-screen h-screen md:hidden bg-primary" id="drawer">
+                    <div class="flex h-full flex-col justify-center text-4xl space-y-8 px-12">
+                        <span class="text-base text-gray-300">Menu</span>
+                        <ul class="flex flex-col justify-center text-4xl space-y-4">
+                            <li class="hover:text-yellow-100 duration-300">Work</li>
+                            <li class="hover:text-yellow-100 duration-300">About</li>
+                            <li class="hover:text-yellow-100 duration-300">Services</li>
+                            <li class="hover:text-yellow-100 duration-300">Products</li>
+                            <li class="hover:text-yellow-100 duration-300">Contact</li>
+                        </ul>
+                        <div class="flex flex-col">
+                            <span class="text-base text-gray-300">Get In Touch</span>
+                            <div>
+                                <a href="mailto:buildnboost@gmail.com"
+                                    class="p-2 bg-white text-black text-base">buildnboost@gmail.com</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <section class="container mx-auto px-8 md:px-14 flex items-center h-screen">
-        <div class="flex flex-col justify-center flex-1">
-            <span class="text-sm md:text-lg mt-4 md:mt-10">we design and develop</span>
-            <h1 class="font-bold text-5xl leading-tight md:text-8xl mt-1 md:mt-2">Websites Mobile Apps</h1>
-            <p class="text-lg md:text-3xl mt-1 md:mt-6">
-                Full-service digital agency specialized in building websites & mobile apps.
-            </p>
-        </div>
-        <div class="relative hidden flex-1 md:flex items-center justify-center">
-            <div class="w-96 h-60 bg-red-200 m-2 rounded come-in" id="video"></div>
-        </div>
-    </section>
-
-    <section class="container mx-auto px-8 md:px-14 flex items-center h-screen">
-
-    </section>
-
-    <section>
-        <div class="container mx-auto px-8 md:px-24 flex justify-between py-24">
-            <div class="flex flex-col space-y-1">
-                <span class="text-5xl stroke-current">featured</span>
-                <span class="text-5xl stroke-current text-outline text-primary">projects</span>
+                </nav>
             </div>
-        </div>
-    </section>
+        </header>
+
+        <section class="container mx-auto px-8 md:px-14 flex items-center set-height">
+            <div class="flex flex-col justify-center flex-1">
+                <span class="text-sm md:text-lg mt-4 md:mt-10">we design and develop</span>
+                <h1 class="font-bold text-5xl leading-tight md:text-8xl mt-1 md:mt-2">Websites Mobile Apps</h1>
+                <p class="text-lg md:text-3xl mt-1 md:mt-6">
+                    Full-service digital agency specialized in building websites & mobile apps.
+                </p>
+            </div>
+            <div class="relative hidden flex-1 md:flex items-center justify-center">
+                <div class="absolute right-[-100px] w-full h-[444px] bg-gray-400 m-2 rounded-lg" id="video"></div>
+            </div>
+        </section>
+
+        <section class="bg-white text-black">
+            <div class="flex flex-col justify-between py-12">
+                <div class="flex flex-1 items-center space-x-6 pl-8 md:pl-24">
+                    <span class="text-3xl stroke-current">Featured Work</span>
+                    <div class="flex-1 bg-gray-200 opacity-70">
+                        <hr class="border border-black opacity-70 w-1/2" />
+                    </div>
+                </div>
+
+                <div class="flex-1 grid grid-cols-2 justify-items-stretch gap-12 px-8 md:px-24 mt-12">
+                    <div class="flex flex-col">
+                        <div class="bg-red-200 h-[292px] rounded-lg"></div>
+                        <div class="flex items-center space-x-[8px] mt-8">
+                            <span class="text-sm">01</span>
+                            <hr class="border border-black opacity-70 w-[48px]" />
+                            <span class="text-sm">LipLick Pizzeria</span>
+                        </div>
+                        <div class="flex space-x-[24px] mt-6">
+                            <span class="text-sm font-medium">Branding</span>
+                            <span class="text-sm font-medium">UI/UX Design</span>
+                            <span class="text-sm font-medium">Web & App Development</span>
+                        </div>
+                        <span class="text-3xl font-medium mt-4">Indo Italian Style Based Pizza Brand</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="bg-red-200 h-[292px] rounded-lg"></div>
+                        <div class="flex items-center space-x-[8px] mt-8">
+                            <span class="text-sm">01</span>
+                            <hr class="border border-black opacity-70 w-[48px]" />
+                            <span class="text-sm">LipLick Pizzeria</span>
+                        </div>
+                        <div class="flex space-x-[24px] mt-6">
+                            <span class="text-sm font-medium">Branding</span>
+                            <span class="text-sm font-medium">UI/UX Design</span>
+                            <span class="text-sm font-medium">Web & App Development</span>
+                        </div>
+                        <span class="text-3xl font-medium mt-4">Indo Italian Style Based Pizza Brand</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <section class="px-8 md:px-14 flex items-center h-screen bg-black">
+            <div class="container mx-auto md:mx-[60px] flex flex-col">
+                <span class="text-xl md:text-7xl font-medium">Got A Project?</span>
+                <span class="text-xl md:text-7xl underline">Tell us about it</span>
+
+                <div class="flex justify-end mt-[92px]">
+                    <span class="text-lg md:text-xl underline">contact@buildnboost.com</span>
+                </div>
+
+                <div class="flex items-end justify-between mt-[14px]">
+                    <div class="flex flex-col space-y-5">
+                        <span class="text-xl md:text-3xl font-bold">buildnboost.</span>
+                        <span class="text-xs md:text-sm font-medium opacity-70">7, Pearl Palace CHS, Agarkar
+                            Rd,<br />Dombivli,
+                            India - 421201</span>
+                        <a href="" class="text-xs md:text-sm font-medium opacity-70">Sitemap</a>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-y-12 gap-x-16">
+                        <a href="" class="text-lg md:text-xl font-medium">Facebook</a>
+                        <a href="" class="text-lg md:text-xl font-medium">Instagram</a>
+                        <a href="" class="text-lg md:text-xl font-medium">Twitter</a>
+                        <a href="" class="text-lg md:text-xl font-medium">LinkedIn</a>
+                        <a href="" class="text-lg md:text-xl font-medium">Dribble</a>
+                        <a href="" class="text-lg md:text-xl font-medium">Behance</a>
+                        <a href="" class="text-lg md:text-xl font-medium">Youtube</a>
+                        <a href="" class="text-lg md:text-xl font-medium">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -93,6 +157,10 @@
 
     <script>
         $(document).ready(function () {
+            var height = $(window).height();
+
+            $(".set-height").css("height", height - 100);
+
             $(".hamburger").click(function () {
                 $(this).toggleClass("is-active");
                 $('#drawer').toggleClass("open");
