@@ -654,6 +654,10 @@ video {
   right: -100px;
 }
 
+.-right-full {
+  right: -100%;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -901,6 +905,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-hidden {
