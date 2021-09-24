@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.8 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -683,6 +683,11 @@ video {
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mx-24 {
   margin-left: 6rem;
   margin-right: 6rem;
@@ -748,6 +753,10 @@ video {
   height: 5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -792,6 +801,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1108,12 +1121,32 @@ video {
   line-height: 1.5rem;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-\[-3\%\] {
+  letter-spacing: -3%;
+}
+
+.tracking-\[-3px\] {
+  letter-spacing: -3px;
 }
 
 .text-primary {
@@ -1200,6 +1233,10 @@ video {
 
   .md\:mt-\[92px\] {
     margin-top: 92px;
+  }
+
+  .md\:mt-12 {
+    margin-top: 3rem;
   }
 
   .md\:block {
