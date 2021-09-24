@@ -16,64 +16,92 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    .bg-noise {
+        background-image: url("assets/images/noise-transparent-bg.png");
+        background-repeat: repeat;
+    }
+
+    .videothumbnail {
+        background-image: url("assets/images/VideoThumbnail1.png");
+        background-repeat: no-repeat;
+    }
+</style>
+
 <body class="font-body bg-primary text-white overflow-x-hidden">
 
     <!-- Custom cursor pointer -->
     <div class="cursor hidden md:block z-50"></div>
 
     <div class="relative overflow-x-hidden">
-        <header class="w-screen bg-primary z-50">
-            <div class="container mx-auto px-8 md:px-14 flex justify-between py-12">
-                <a href="#index.html" title="buildnboost">
-                    <img src="./assets/images/logo/buildnboost-logo.svg" alt="buildnboost logo" class="h-8">
-                </a>
-                <div class="hamburger md:hidden z-50" id="hamburger-1">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-                <ul class="hidden md:flex text-lg leading-8 space-x-12 my-auto">
-                    <li class="font-medium cursor-pointer">Work</li>
-                    <li class="font-medium cursor-pointer">About</li>
-                    <li class="font-medium cursor-pointer">Services</li>
-                    <li class="font-medium cursor-pointer">Products</li>
-                    <li class="font-medium cursor-pointer">Contact</li>
-                </ul>
+        <div class="bg-noise">
+            <header class="w-screen">
+                <div class="container mx-auto px-8 md:px-14 flex justify-between py-12">
+                    <a class="cursor-pointer my-auto" href="#index.html" title="buildnboost">
+                        <img src="./assets/images/logo/buildnboost-logo.svg" alt="buildnboost logo" class="h-6">
+                    </a>
+                    <div class="hamburger md:hidden z-50" id="hamburger-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <ul class="hidden md:flex text-lg leading-8 space-x-12 my-auto">
+                        <li class="font-medium cursor-pointer">Work</li>
+                        <li class="font-medium cursor-pointer">About</li>
+                        <li class="font-medium cursor-pointer">Services</li>
+                        <li class="font-medium cursor-pointer">Products</li>
+                        <li class="font-medium cursor-pointer">Contact</li>
+                    </ul>
 
-                <nav class="absolute top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary" id="drawer">
-                    <div class="flex h-full flex-col justify-center text-4xl space-y-8 px-12">
-                        <span class="text-base text-gray-300">Menu</span>
-                        <ul class="flex flex-col justify-center text-4xl space-y-4 my-auto">
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Work</li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer">About</li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Services</li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Products</li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer">Contact</li>
-                        </ul>
-                        <div class="flex flex-col">
-                            <span class="text-base text-gray-300">Get In Touch</span>
-                            <div>
-                                <a href="mailto:buildnboost@gmail.com"
-                                    class="p-2 bg-white text-black text-base rounded-sm hover:scale-125 duration-500">buildnboost@gmail.com</a>
+                    <nav class="absolute top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary" id="drawer">
+                        <div class="flex h-full flex-col justify-center text-4xl space-y-8 px-12">
+                            <span class="text-base text-gray-300">Menu</span>
+                            <ul class="flex flex-col justify-center text-4xl space-y-4 my-auto">
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer">Work</li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer">About</li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer">Services</li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer">Products</li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer">Contact</li>
+                            </ul>
+                            <div class="flex flex-col">
+                                <span class="text-base text-gray-300">Get In Touch</span>
+                                <div>
+                                    <a href="mailto:buildnboost@gmail.com"
+                                        class="p-2 bg-white text-black text-base rounded-sm hover:scale-125 duration-500">buildnboost@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="container mx-auto px-8 md:px-14 grid grid-cols-2 space-x-12 set-height">
+                <div class="mt-12">
+                    <span class="text-sm tracking-wide md:text-lg mt-4 md:mt-6">We design and develop</span>
+                    <h1 class="font-bold text-5xl md:text-8xl mt-1 md:mt-2">Websites </h1>
+                    <h1 class="font-bold text-5xl md:text-8xl mt-1 md:mt-2">Mobile Apps </h1>
+                    <p class="text-lg md:text-3xl mt-1 md:mt-12">
+                        Full-service digital agency specialized in building websites & mobile apps for service based
+                        startups and businessess.</p>
+                </div>
+                <div class="relative group">
+                    <div class="absolute w-[693px] h-[390px] mt-12 rounded-sm group items-center justify-center flex">
+                        <video autoplay loop muted playsinline preload="auto" class="rounded-sm">
+                            <source src="./assets/1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div
+                            class="absolute opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border-2 border-dashed border-primary rounded-full">
+                            <div
+                                class="duration-300 w-16 h-16 border rounded-full backdrop-filter backdrop-blur-lg flex items-center justify-center">
+                                <img src="./assets/images/icons/play-button.svg" alt="play" class="pl-1">
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
 
-        <section class="container mx-auto px-8 md:px-14 grid grid-cols-2 space-x-12 set-height">
-            <div class="mt-12">
-                <span class="text-sm tracking-wide md:text-lg mt-4 md:mt-6">We design and develop</span>
-                <h1 class="font-bold text-5xl md:text-8xl mt-1 md:mt-2">Websites </h1>
-                <h1 class="font-bold text-5xl md:text-8xl mt-1 md:mt-2">Mobile Apps </h1>
-                <p class="text-lg md:text-3xl mt-1 md:mt-12">
-                    Full-service digital agency specialized in building websites & mobile apps for service based startups and businessess.</p>
-            </div>
-            <div class="relative">
-                <div class="absolute w-[670px] h-[400px] bg-gray-400 mt-12 rounded-lg" id="video"></div>
-            </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
 
         <section class="bg-white text-black">
             <div class="flex flex-col justify-between py-12">

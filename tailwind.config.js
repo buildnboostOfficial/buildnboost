@@ -14,6 +14,8 @@ module.exports = {
         "card-border":
           "linear-gradient(130deg, #ffffffAA, #2A2674, #2A2674, #ffffffAA)",
       },
+
+      
       fontFamily: {
         body: "DM Sans, sans-serif",
       },
