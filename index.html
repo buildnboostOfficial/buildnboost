@@ -21,11 +21,11 @@
         background-image: url("assets/images/noise-transparent-bg.png");
         background-repeat: repeat;
     }
-
-    .videothumbnail {
+    
+    /* .videothumbnail {
         background-image: url("assets/images/VideoThumbnail1.png");
         background-repeat: no-repeat;
-    }
+    } */
 </style>
 
 <body class="font-body bg-primary text-white overflow-x-hidden">
@@ -33,18 +33,18 @@
     <!-- Custom cursor pointer -->
     <div class="cursor hidden md:block z-50"></div>
 
-    <div class="relative overflow-x-hidden">
-        <div class="bg-noise">
+    <div class="relative lg:overflow-x-hidden">
+        <div class="bg-noise md:pb-32 pb-72"> 
             <header>
                 <div class="container mx-auto px-8 md:px-14 flex justify-between py-12">
                     <a class="cursor-pointer my-auto" href="#index.html" title="buildnboost">
                         <img src="./assets/images/logo/buildnboost-logo.svg" alt="buildnboost logo" class="h-6">
                     </a>
-                    <div class="hamburger md:hidden z-50" id="hamburger-1">
+                    <div class="hamburger lg:hidden z-50" id="hamburger-1">
                         <span class="line"></span>
                         <span class="line"></span>
                     </div>
-                    <ul class="hidden md:flex text-lg leading-8 space-x-12 my-auto">
+                    <ul class="hidden lg:flex text-lg leading-8 space-x-12 my-auto">
                         <li class="font-medium cursor-pointer">Work</li>
                         <li class="font-medium cursor-pointer">About</li>
                         <li class="font-medium cursor-pointer">Services</li>
@@ -74,17 +74,17 @@
                 </div>
             </header>
 
-            <section class="container mx-auto px-8 md:px-14 grid grid-cols-2 space-x-12 set-height">
-                <div class="mt-12">
-                    <span class="text-sm tracking-wide md:text-lg mt-4 md:mt-6">We design and develop</span>
-                    <h1 class="font-bold text-5xl md:text-8xl mt-1 md:mt-2">Websites </h1>
-                    <h1 class="font-bold text-5xl md:text-8xl mt-1 md:mt-2">Mobile Apps </h1>
-                    <p class="text-lg md:text-3xl mt-1 md:mt-12">
+            <section class="container mx-auto px-8 md:px-14 grid lg:grid-cols-2 grid-cols-1 space-x-0 lg:space-x-12   h-auto lg:set-height">
+                <div class="mt-12 lg:mt-20 xl:mt-12">
+                    <span class="text-base tracking-wide md:text-lg mt-4 md:mt-6">We design and develop</span>
+                    <h1 class="font-bold text-5xl lg:text-7xl xl:text-8xl mt-1 md:mt-2">Websites </h1>
+                    <h1 class="font-bold text-5xl lg:text-7xl xl:text-8xl  mt-1 md:mt-2">Mobile Apps </h1>
+                    <p class="text-lg md:text-xl lg:text-2xl xl:text-3xl mt-12">
                         Full-service digital agency specialized in building websites & mobile apps for service based
-                        startups and businessess.</p>
+                        startups and business.</p>
                 </div>
                 <div class="relative group">
-                    <div class="absolute w-[693px] h-[390px] mt-12 rounded-sm group items-center justify-center flex">
+                    <div class="absolute md:w-[364px] lg:w-[693px] md:h-[204px] lg:h-[390px] mt-12 rounded-sm group items-center justify-center flex">
                         <video autoplay loop muted playsinline preload="auto" class="rounded-sm">
                             <source src="./assets/1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -101,142 +101,10 @@
 
             </section>
         </div>
+    
 
-
-        <section class="bg-white text-black">
-            <div class="flex flex-col justify-between py-12">
-                <div class="flex flex-1 items-center space-x-6 pl-8 md:pl-24">
-                    <span class="text-3xl stroke-current">Featured Work</span>
-                    <div class="flex-1 bg-gray-200 opacity-70">
-                        <hr class="border border-black opacity-70 w-1/2" />
-                    </div>
-                </div>
-
-                <div class="flex-1 grid md:grid-cols-2 justify-items-stretch gap-12 px-8 md:px-24 mt-12">
-                    <div class="group flex flex-col">
-                        <div
-                            class="flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
-                            <div
-                                class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
-                                <span class="font-medium text-sm">View<br />Case</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-[8px] mt-8">
-                            <span class="text-sm">01</span>
-                            <hr class="border border-black opacity-70 w-[48px]" />
-                            <span class="text-sm">LipLick Pizzeria</span>
-                        </div>
-                        <div class="flex space-x-[24px] mt-6">
-                            <span class="text-sm font-medium">Branding</span>
-                            <span class="text-sm font-medium">UI/UX Design</span>
-                            <span class="text-sm font-medium">Web & App Development</span>
-                        </div>
-                        <span class="text-3xl font-medium mt-4">Indo Italian Style Based Pizza Brand</span>
-                    </div>
-                    <div class="group flex flex-col">
-                        <div
-                            class="flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
-                            <div
-                                class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
-                                <span class="font-medium text-sm">View<br />Case</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-[8px] mt-8">
-                            <span class="text-sm">02</span>
-                            <hr class="border border-black opacity-70 w-[48px]" />
-                            <span class="text-sm">View Case Study</span>
-                        </div>
-                        <div class="flex space-x-[24px] mt-6">
-                            <span class="text-sm font-medium">UI/UX Design</span>
-                            <span class="text-sm font-medium">Website Development</span>
-                        </div>
-                        <span class="text-3xl font-medium mt-4">Oman’s Travel Agency</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-primary">
-            <div class="flex flex-col justify-between py-12">
-                <div class="flex flex-1 items-center space-x-6 pl-8 md:pl-24">
-                    <span class="text-3xl stroke-current">What We Do</span>
-                    <div class="flex-1 bg-gray-200 opacity-70">
-                        <hr class="border border-gray-400 opacity-70 w-1/2" />
-                    </div>
-                </div>
-
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-4 lg:gap-8 px-8 md:px-14 lg:px-24 mt-12">
-                    <div class="bg-card-border rounded-lg p-[2px]">
-                        <div class="h-full flex flex-col justify-center space-y-6 bg-card rounded-lg py-12 px-6">
-                            <img src="/assets/images/web.svg" alt="" class="w-20">
-                            <span class="font-bold text-3xl">Web Development</span>
-                            <p class="text-sm leading-6 tracking-wide">Create online business solutions and web based
-                                SaaS products
-                                with custom
-                                websites and
-                                responsive user friendly
-                                development.</p>
-                            <a>Know More</a>
-                        </div>
-                    </div>
-                    <div class="bg-card-border rounded-lg p-[2px]">
-                        <div class="h-full flex flex-col justify-center space-y-6 bg-card rounded-lg py-12 px-6">
-                            <img src="/assets/images/web.svg" alt="" class="w-20">
-                            <span class="font-bold text-3xl">App Development</span>
-                            <p class="text-sm leading-6 tracking-wide">Create online business solutions and web based
-                                SaaS products
-                                with custom
-                                websites and
-                                responsive user friendly
-                                development.</p>
-                            <a>Know More</a>
-                        </div>
-                    </div>
-                    <div class="bg-card-border rounded-lg p-[2px]">
-                        <div class="h-full flex flex-col justify-center space-y-6 bg-card rounded-lg py-12 px-6">
-                            <img src="/assets/images/web.svg" alt="" class="w-20">
-                            <span class="font-bold text-3xl">E-commerce Solution</span>
-                            <p class="text-sm leading-6 tracking-wide">Create online business solutions and web based
-                                SaaS products
-                                with custom
-                                websites and
-                                responsive user friendly
-                                development.</p>
-                            <a>Know More</a>
-                        </div>
-                    </div>
-                    <div class="bg-card-border rounded-lg lg:col-span-3 p-[2px]">
-                        <div class="h-full flex flex-col justify-center space-y-6 bg-card rounded-lg py-12 px-6">
-                            <img src="/assets/images/web.svg" alt="" class="w-20">
-                            <span class="font-bold text-3xl">ReadyMade Solutions</span>
-                            <p class="text-sm leading-6 tracking-wide">
-                                Create online business solutions and web based SaaS products with custom websites and
-                                responsive user friendly
-                                development.
-                            </p>
-                            <a>View Pricing</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="grid grid-cols-3 gap-8 mx-24 mt-8 bg-card-border rounded-lg p-[2px]">
-                    <div class="bg-card rounded-lg py-12 px-6">
-                        <div class="flex flex-col space-y-6">
-                            <span class="font-bold text-3xl">E-commerce Solution</span>
-                            <p class="text-sm leading-6 tracking-wide">Create online business solutions and web based
-                                SaaS products
-                                with custom
-                                websites and
-                                responsive user friendly
-                                development.</p>
-                            <a>Know More</a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-    </div>
-    <footer>
+        </div>
+    <!-- <footer>
         <section class="px-8 md:px-14 flex items-center h-screen bg-black">
             <div class="container mx-auto md:mx-[60px] flex flex-col">
                 <span class="text-4xl md:text-7xl font-medium">Got A Project?</span>
@@ -276,7 +144,7 @@
                 </div>
             </div>
         </section>
-    </footer>
+    </footer> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
