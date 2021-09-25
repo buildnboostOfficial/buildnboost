@@ -8,6 +8,9 @@ module.exports = {
         primary: {
           DEFAULT: "#0A047A",
         },
+        dark: {
+          DEFAULT: "#111827",
+        },
       },
 
       backgroundImage: {
