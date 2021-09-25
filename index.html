@@ -21,10 +21,12 @@
         background-image: url("assets/images/noise-transparent-bg.png");
         background-repeat: repeat;
     }
-    /* .videothumbnail {
+    .videothumbnail {
         background-image: url("assets/images/VideoThumbnail1.png");
         background-repeat: no-repeat;
-    } */
+    }
+
+
 </style>
 
 <body class="font-body bg-noise bg-primary text-white overflow-x-hidden">
@@ -115,7 +117,9 @@
             <div class="flex-1 grid md:grid-cols-2 justify-items-stretch gap-12 px-8 md:px-24 mt-12">
                 <div class="group flex flex-col">
                     <div
-                        class="flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
+                        class="aspect-w-3 aspect-h-2 flex items-center justify-center group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
+                        
+                        <img src="./assets/images/twiddle.jpg" alt="" class="object-cover rounded-sm">
                         <div
                             class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
                             <span class="font-medium text-sm">View<br />Case</span>
@@ -127,15 +131,26 @@
                         <span class="text-sm">LipLick Pizzeria</span>
                     </div>
                     <div class="flex space-x-[24px] mt-6">
-                        <span class="text-sm font-medium">Branding</span>
-                        <span class="text-sm font-medium">UI/UX Design</span>
-                        <span class="text-sm font-medium">Web & App Development</span>
+
+                        <div class="bg-card-border flex p-[1px]">
+                            <span class="h-full text-xs font-medium bg-card p-2">Branding</span>
+                        </div>
+
+                        <div class="bg-card-border flex p-[1px]">
+                        <span class="h-full p-2 text-xs font-medium bg-card">UI/UX Design</span>
+
+                        </div>
+                        <div class="bg-card-border flex p-[1px]">
+                        <span class="h-full p-2 text-xs font-medium bg-card">Web & App Development</span>
+                        </div>
+                        
                     </div>
                     <span class="text-3xl font-medium mt-4">Indo Italian Style Based Pizza Brand</span>
                 </div>
                 <div class="group flex flex-col">
                     <div
-                        class="flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
+                        class="aspect-w-3 aspect-h-2 flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
+                        <img src="./assets/images/twiddle.jpg" alt="" class="object-cover rounded-sm">
                         <div
                             class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
                             <span class="font-medium text-sm">View<br />Case</span>
