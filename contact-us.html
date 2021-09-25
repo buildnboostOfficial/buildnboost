@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact - buildnboost.</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-body overflow-x-hidden tracking-wide">
+
+    <!-- Custom cursor pointer -->
+    <div class="cursor bg-primary hidden md:block z-50"></div>
+
+    <header>
+        <div class="container mx-auto px-8 md:px-0 lg:px-14 flex justify-between py-12">
+            <a class="cursor-pointer my-auto" href="/" title="buildnboost">
+                <img src="./assets/images/logo/buildnboost-logo-primary.svg" alt="buildnboost logo" class="h-6">
+            </a>
+            <div class="hamburger md:hidden z-[60]" id="hamburger-1">
+                <span class="line" style="background-color: #0A047A;"></span>
+                <span class="line" style="background-color: #0A047A;"></span>
+            </div>
+            <ul class="hidden md:flex text-lg text-primary leading-8 space-x-12 my-auto">
+                <li class="font-medium cursor-pointer hover:scale-110 duration-500">Work</li>
+                <li class="font-medium cursor-pointer hover:scale-110 duration-500">About</li>
+                <li class="font-medium cursor-pointer hover:scale-110 duration-500">Services</li>
+                <li class="font-medium cursor-pointer hover:scale-110 duration-500">Products</li>
+                <li class="font-medium cursor-pointer hover:scale-110 duration-500">Contact</li>
+            </ul>
+
+            <nav class="fixed top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary z-50" id="drawer">
+                <div class="flex h-full flex-col justify-center text-4xl space-y-8 px-12">
+                    <span class="text-base text-gray-300">Menu</span>
+                    <ul class="flex flex-col justify-center text-4xl text-white space-y-4 my-auto">
+                        <li class="cursor-pointer">Work</li>
+                        <li class="cursor-pointer">About</li>
+                        <li class="cursor-pointer">Services</li>
+                        <li class="cursor-pointer">Products</li>
+                        <li class="cursor-pointer">Contact</li>
+                    </ul>
+                    <div class="flex flex-col">
+                        <span class="text-base text-gray-300">Get In Touch</span>
+                        <div>
+                            <a href="mailto:buildnboost@gmail.com"
+                                class="p-2 bg-white text-black text-base rounded-sm hover:scale-125 duration-500">buildnboost@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-8 md:px-0 lg:px-40 py-12 lg:py-32">
+        <div class="flex flex-col md:flex-row justify-center md:items-center lg:justify-between space-y-4 lg:space-y-0">
+            <h1 class="font-medium text-5xl md:text-6xl lg:text-7xl">
+                Let's get in
+                touch
+            </h1>
+            <div
+                class="flex flex-col md:flex-row md:items-center text-gray-500 space-y-4 lg:space-y-0 space-x-0 md:space-x-4 lg:space-x-16">
+                <div class="flex flex-col space-y-1">
+                    <a class="underline font-medium text-base"
+                        href="mailto:contact@buildnboost.com">contact@buildnboost.com</a>
+                    <a class="font-medium text-base" href="tel:+91 79001 51883">+91 79001 51883</a>
+                </div>
+                <a class="font-medium text-base" target="_blank"
+                    href="http://maps.google.com/?q=7, Pearl Palace CHS, Agarkar Rd, Dombivli, India - 421201">7,
+                    Pearl Palace CHS, Agarkar Rd,<br />Dombivli, India -
+                    421201</a>
+            </div>
+        </div>
+
+        <div class="mt-24 md:mt-28 lg:mt-32 text-primary">
+            <form action="" method="post">
+                <div class="flex flex-col space-y-12 md:space-y-14 lg:space-y-16">
+                    <div class="relative">
+                        <input required type="text" id="name" name="name"
+                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-primary p-2 w-full focus:outline-none text-base"
+                            placeholder="Name" />
+                        <label for="name"
+                            class="transition-all text-xl md:text-2xl lg:text-3xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-0 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm absolute left-1 font-medium">Your
+                            Name</label>
+                    </div>
+                    <div class="relative">
+                        <input required type="text" id="project" name="project"
+                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-primary p-2 w-full focus:outline-none text-base"
+                            placeholder="Project" />
+                        <label for="project"
+                            class="transition-all text-xl md:text-2xl lg:text-3xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-0 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm absolute left-1 font-medium">Your
+                            Project</label>
+                    </div>
+                    <div class="relative">
+                        <input required type="text" id="about" name="about"
+                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-primary p-2 w-full focus:outline-none text-base"
+                            placeholder="Tell us about your project" />
+                        <label for="about"
+                            class="transition-all text-xl md:text-2xl lg:text-3xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-0 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm absolute left-1 font-medium">Tell
+                            us about your project</label>
+                    </div>
+                </div>
+                <div class="flex items-start mt-24 md:mt-28 lg:mt-32">
+                    <div class="flex flex-col">
+                        <input type="submit" value="Submit Message"
+                            class="bg-transparent text-primary text-opacity-75 -translate-y-1 font-medium text-2xl hover:cursor-pointer">
+                        <hr class="border-b border-opacity-75 border-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+                $('#drawer').toggleClass("open");
+
+                var line = document.getElementsByClassName('line')[0];
+                var line_1 = document.getElementsByClassName('line')[1];
+                if (line.style.backgroundColor === 'rgb(10, 4, 122)') {
+                    line.style.backgroundColor = 'white';
+                } else {
+                    line.style.backgroundColor = 'rgb(10, 4, 122)';
+                }
+                if (line_1.style.backgroundColor === 'rgb(10, 4, 122)') {
+                    line_1.style.backgroundColor = 'white';
+                } else {
+                    line_1.style.backgroundColor = 'rgb(10, 4, 122)';
+                }
+            });
+        }); // trigger hamburger animation and toggle drawer state
+    </script>
+
+    <script>
+        // document.documentElement.style.cursor = 'none'; // uncomment this line to hide cursor
+        const cursor = document.querySelector('.cursor'); // Select cursor div
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 7) + "px;")
+        }, 100); // Follow mouse pointer
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        }); // trigger pointer onClick animation
+    </script>
+</body>
+
+</html>
