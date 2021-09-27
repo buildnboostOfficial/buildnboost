@@ -21,12 +21,11 @@
         background-image: url("assets/images/noise-transparent-bg.png");
         background-repeat: repeat;
     }
+
     .videothumbnail {
         background-image: url("assets/images/VideoThumbnail1.png");
         background-repeat: no-repeat;
     }
-
-
 </style>
 
 <body class="font-body bg-noise bg-primary text-white overflow-x-hidden">
@@ -53,8 +52,8 @@
                         <li class="font-medium cursor-pointer">Contact</li>
                     </ul>
 
-                    <nav class="absolute top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary" id="drawer">
-                        <div class="flex h-full flex-col justify-center text-4xl space-y-8 px-12">
+                    <nav class=" absolute top-0 bottom-0 -right-full hidden bg-primary" id="drawer">
+                        <div class="md:hidden flex h-full flex-col justify-center text-4xl space-y-8 px-12">
                             <span class="text-base text-gray-300">Menu</span>
                             <ul class="flex flex-col justify-center text-4xl space-y-4 my-auto">
                                 <li class="hover:text-blue-300 duration-300 cursor-pointer">Work</li>
@@ -79,8 +78,8 @@
                 class="container mx-auto px-8 md:px-14 grid lg:grid-cols-2 grid-cols-1 space-x-0 lg:space-x-12 h-auto">
                 <div class="mt-12 lg:mt-20 xl:mt-12">
                     <span class="text-sm tracking-wide md:text-lg mt-4 md:mt-6">We design and develop</span>
-                    <h1 class="font-bold text-5xl  lg:text-7xl md:text-8xl xl:text-8xl mt-1 md:mt-2">Websites </h1>
-                    <h1 class="font-bold text-5xl  lg:text-7xl md:text-8xl xl:text-8xl  mt-1 md:mt-2">Mobile Apps </h1>
+                    <h1 class="font-bold text-4xl  lg:text-7xl md:text-8xl xl:text-8xl mt-1 md:mt-2">Websites </h1>
+                    <h1 class="font-bold text-4xl  lg:text-7xl md:text-8xl xl:text-8xl  mt-1 md:mt-2">Mobile Apps </h1>
                     <p class="text-lg  lg:text-2xl xl:text-3xl md:text-3xl mt-12">
                         Full-service digital agency specialized in building websites & mobile apps for service based
                         startups and business.</p>
@@ -105,8 +104,8 @@
         </div>
     </div>
 
-    <section>
-        <div class="flex flex-col justify-between py-12">
+    <section class="bg-white text-black bg-noise">
+        <div class="flex flex-col justify-between pt-12 pb-24">
             <div class="flex flex-1 items-center space-x-6 pl-8 md:pl-24">
                 <span class="text-3xl stroke-current">Featured Work</span>
                 <div class="flex-1 bg-gray-200 opacity-70">
@@ -117,11 +116,10 @@
             <div class="flex-1 grid md:grid-cols-2 justify-items-stretch gap-12 px-8 md:px-24 mt-12">
                 <div class="group flex flex-col">
                     <div
-                        class="aspect-w-3 aspect-h-2 flex items-center justify-center group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
-                        
+                        class="aspect-w-3 aspect-h-2 flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
                         <img src="./assets/images/twiddle.jpg" alt="" class="object-cover rounded-sm">
                         <div
-                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
+                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full m-auto">
                             <span class="font-medium text-sm">View<br />Case</span>
                         </div>
                     </div>
@@ -130,20 +128,20 @@
                         <hr class="border border-black opacity-70 w-[48px]" />
                         <span class="text-sm">LipLick Pizzeria</span>
                     </div>
-                    <div class="flex space-x-[24px] mt-6">
+                    <div class="flex space-x-[24px] mt-4">
 
                         <div class="bg-card-border flex p-[1px]">
-                            <span class="h-full text-xs font-medium bg-card p-2">Branding</span>
+                            <span class="h-full text-xs font-medium bg-card p-2 text-white">Branding</span>
                         </div>
 
                         <div class="bg-card-border flex p-[1px]">
-                        <span class="h-full p-2 text-xs font-medium bg-card">UI/UX Design</span>
+                            <span class="h-full p-2 text-xs font-medium bg-card text-white">UI/UX Design</span>
+                        </div>
 
-                        </div>
                         <div class="bg-card-border flex p-[1px]">
-                        <span class="h-full p-2 text-xs font-medium bg-card">Web & App Development</span>
+                            <span class="h-full p-2 text-xs font-medium bg-card text-white">Web & App Development</span>
                         </div>
-                        
+
                     </div>
                     <span class="text-3xl font-medium mt-4">Indo Italian Style Based Pizza Brand</span>
                 </div>
@@ -152,7 +150,7 @@
                         class="aspect-w-3 aspect-h-2 flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
                         <img src="./assets/images/twiddle.jpg" alt="" class="object-cover rounded-sm">
                         <div
-                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full">
+                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full m-auto">
                             <span class="font-medium text-sm">View<br />Case</span>
                         </div>
                     </div>
@@ -161,9 +159,13 @@
                         <hr class="border border-black opacity-70 w-[48px]" />
                         <span class="text-sm">View Case Study</span>
                     </div>
-                    <div class="flex space-x-[24px] mt-6">
-                        <span class="text-sm font-medium">UI/UX Design</span>
-                        <span class="text-sm font-medium">Website Development</span>
+                    <div class="flex space-x-[24px] mt-4">
+                        <div class="bg-card-border flex p-[1px]">
+                            <span class="h-full p-2 text-xs font-medium bg-card text-white">UI/UX Design</span>
+                        </div>
+                        <div class="bg-card-border flex p-[1px]">
+                            <span class="h-full p-2 text-xs font-medium bg-card text-white">Website Development</span>
+                        </div>
                     </div>
                     <span class="text-3xl font-medium mt-4">Oman’s Travel Agency</span>
                 </div>
@@ -171,7 +173,7 @@
         </div>
     </section>
 
-    <section class="bg-primary">
+    <!-- <section class="bg-primary">
         <div class="flex flex-col justify-between py-12">
             <div class="flex flex-1 items-center space-x-6 pl-8 md:pl-24">
                 <span class="text-3xl stroke-current">What We Do</span>
@@ -233,7 +235,7 @@
                         <a>View Pricing</a>
                     </div>
                 </div>
-            </div>
+            </div>  -->
             <!-- <div class="grid grid-cols-3 gap-8 mx-24 mt-8 bg-card-border rounded-lg p-[2px]">
                 <div class="bg-card rounded-lg py-12 px-6">
                     <div class="flex flex-col space-y-6">
@@ -248,29 +250,31 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-    </section>
+         <!-- </div> 
+    </section> -->
 
-    <footer>
-        <section class="px-8 md:px-14 flex items-center h-screen bg-black bg-noise">
+    <footer class="py-32 bg-black bg-noise">
+        <section class=" px-8 md:px-14 flex items-center h-screen ">
             <div class="container mx-auto md:mx-[60px] flex flex-col">
-                <span class="text-4xl md:text-7xl font-medium">Got A Project?</span>
-                <span class="text-4xl md:text-7xl underline">Tell us about it</span>
-
-                <div class="flex md:justify-end mt-[46px] md:mt-[92px]">
+                <div>
+                    <span class="text-4xl md:text-7xl font-medium block">Got A Project?</span>
+                    <span class="text-4xl md:text-7xl border-b-4">Tell us about it</span>
+                </div>
+            
+                <div class="flex lg:justify-end mt-[46px] md:mt-[92px]">
                     <span class="text-lg md:text-xl underline">contact@buildnboost.com</span>
                 </div>
 
-                <div class="flex flex-col md:flex-row md:items-end justify-between space-y-4 mt-[14px]">
-                    <div class="flex flex-col space-y-5">
-                        <span class="text-xl md:text-3xl font-bold">buildnboost.</span>
+                <div class="flex flex-col-reverse lg:flex-row justify-between lg:space-y-4 space-y-0 mt-[14px]">
+                    <div class="flex flex-col space-y-6">
+                        <span class="text-xl md:text-3xl font-bold lg:mt-0 mt-32">buildnboost.</span>
                         <span class="text-xs md:text-sm font-medium opacity-70">7, Pearl Palace CHS, Agarkar
                             Rd,<br />Dombivli,
                             India - 421201</span>
                         <a href="" class="text-xs md:text-sm font-medium opacity-70">Sitemap</a>
                     </div>
 
-                    <div class="hidden md:grid grid-cols-4 gap-y-12 gap-x-16">
+                    <div class="grid lg:grid-cols-4 grid-cols-2 gap-y-6 gap-x-12 ">
                         <a href="https://facebook.com" target="_blank"
                             class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Facebook</a>
                         <a href="" target="_blank"
