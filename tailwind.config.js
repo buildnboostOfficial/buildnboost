@@ -11,6 +11,13 @@ module.exports = {
         dark: {
           DEFAULT: "#111827",
         },
+        servicebg: {
+          DEFAULT: "#f8fafc",
+        },
+
+        serviceCards: {
+          DEFAULT: "#DBEAFE",
+        },
       },
 
       backgroundImage: {
@@ -26,6 +33,7 @@ module.exports = {
         primary: {
           DEFAULT: "#111827",
         },
+        
       },
 
       fontFamily: {
