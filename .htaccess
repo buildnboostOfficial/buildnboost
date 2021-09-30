@@ -1,4 +1,4 @@
-ErrorDocument 404 http://www.cloudcrosseng.com/404
+ErrorDocument 404 http://www.buildnboost.com/404
 
 RewriteEngine on
 

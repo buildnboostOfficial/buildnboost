@@ -32,10 +32,10 @@
             </div>
             <ul class="hidden md:flex text-lg text-primary leading-8 space-x-12 my-auto">
                 <li class="font-medium cursor-pointer"> <a href="#fixme">Work</a> </li>
-                        <li class="font-medium cursor-pointer"> <a href="#fixme">About</a></li>
-                        <li class="font-medium cursor-pointer"> <a href="#fixme">Services</a> </li>
-                        <li class="font-medium cursor-pointer"> <a href="#fixme">Products</a></li>
-                        <li class="font-medium cursor-pointer"> <a href="contact-us.html">Contact</a></li>
+                <li class="font-medium cursor-pointer"> <a href="#fixme">About</a></li>
+                <li class="font-medium cursor-pointer"> <a href="#fixme">Services</a> </li>
+                <li class="font-medium cursor-pointer"> <a href="#fixme">Products</a></li>
+                <li class="font-medium cursor-pointer"> <a href="contact-us.html">Contact</a></li>
             </ul>
 
             <nav class="fixed top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary z-50" id="drawer">
@@ -81,39 +81,44 @@
         </div>
 
         <div class="mt-24 md:mt-28 lg:mt-32 text-primary">
-            <form action="" method="post">
+            <form id="form" onsubmit="return validateForm()">
                 <div class="flex flex-col space-y-12 md:space-y-14 lg:space-y-16">
                     <div class="relative">
                         <input required type="text" id="name" name="name"
-                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-primary p-2 w-full focus:outline-none text-base"
+                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-gray-400 p-2 w-full focus:outline-none text-xl"
                             placeholder="Name" />
                         <label for="name"
-                            class="transition-all text-xl md:text-2xl lg:text-3xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-0 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm absolute left-1 font-medium">Your
-                            Name</label>
+                            class="transition-all text-sm peer-placeholder-shown:text-3xl flex-wrap peer-placeholder-shown:text-gray-400 peer-placeholder-shown:-top-0
+                            peer-focus:-top-4 peer-focus:text-gray-600 peer-focus:text-sm absolute left-2 -top-4 text-gray-600">Name</label>
                     </div>
                     <div class="relative">
                         <input required type="text" id="project" name="project"
-                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-primary p-2 w-full focus:outline-none text-base"
+                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-gray-400 p-2 w-full focus:outline-none text-xl"
                             placeholder="Project" />
                         <label for="project"
-                            class="transition-all text-xl md:text-2xl lg:text-3xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-0 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm absolute left-1 font-medium">Your
+                            class="transition-all text-sm peer-placeholder-shown:text-3xl flex-wrap peer-placeholder-shown:text-gray-400 peer-placeholder-shown:-top-0
+                            peer-focus:-top-4 peer-focus:text-gray-600 peer-focus:text-sm absolute left-2 -top-4 text-gray-600">Your
                             Project</label>
                     </div>
                     <div class="relative">
                         <input required type="text" id="about" name="about"
-                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-primary p-2 w-full focus:outline-none text-base"
+                            class="peer placeholder-transparent border-b-[1.5px] focus:border-b-[2px] border-opacity-75 focus:border-opacity-100 border-gray-400 p-2 w-full focus:outline-none text-xl"
                             placeholder="Tell us about your project" />
                         <label for="about"
-                            class="transition-all text-xl md:text-2xl lg:text-3xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-0 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm absolute left-1 font-medium">Tell
+                            class="transition-all text-sm peer-placeholder-shown:text-3xl flex-wrap peer-placeholder-shown:text-gray-400 peer-placeholder-shown:-top-0
+                            peer-focus:-top-4 peer-focus:text-gray-600 peer-focus:text-sm absolute left-2 -top-4 text-gray-600">Tell
                             us about your project</label>
                     </div>
                 </div>
-                <div class="flex items-start mt-24 md:mt-28 lg:mt-32">
-                    <div class="flex flex-col">
-                        <input type="submit" value="Submit Message"
-                            class="bg-transparent text-primary text-opacity-75 -translate-y-1 font-medium text-2xl hover:cursor-pointer">
-                        <hr class="border-b border-opacity-75 border-primary" />
+
+                <div class="flex flex-col items-start mt-24 md:mt-28 lg:mt-32">
+                    <div class="group flex flex-col space-y-2 cursor-pointer">
+                        <input type="submit" id="submit" value="Submit Message"
+                            class="bg-transparent text-gray-400 group-hover:text-gray-600 text-opacity-75 -translate-y-1 font-medium text-2xl duration-300 cursor-pointer">
+                        <hr id="submit-border"
+                            class="border-b border-gray-400 group-hover:border-gray-600 duration-300 cursor-pointer" />
                     </div>
+                    <span class="text-primary font-medium text-xl mt-2" id="message"></span>
                 </div>
             </form>
         </div>
@@ -144,6 +149,33 @@
                 }
             });
         }); // trigger hamburger animation and toggle drawer state
+    </script>
+
+    <script>
+        function validateForm() {
+            event.preventDefault();
+            document.getElementById('submit').disabled = true;
+
+            $.ajax({
+                url: 'https://nvassociates.co.in/mail.php',
+                type: 'POST',
+                data: $('#form').serialize(),
+                success: function (response) {
+                    $('#submit').addClass("text-green-500 hover:text-green-500");
+                    $('#submit-border').addClass("border-green-500 hover:border-green-500");
+                    $('#submit').prop('value', 'Message Sent.! We will get back to you within 12 hours');
+                    // document.getElementById('submit').disabled = false;
+                },
+                error: function (err) {
+                    $('#submit').addClass("text-red-500 hover:text-red-500");
+                    $('#submit-border').addClass("border-red-500 hover:border-red-500");
+                    $('#submit').prop('value', 'Something Went Wrong!');
+                    $('#message').html('Leave us mail on contact@buildnboost.com');
+                    // document.getElementById('submit').disabled = false;
+                    // document.getElementById('submit').style.visibility = false;
+                }
+            });
+        };
     </script>
 
     <script>

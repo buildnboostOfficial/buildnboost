@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  var height = $(window).height();
+
+  $(".set-height").css("height", height - 100);
+
   $(".hamburger").click(function () {
     $(this).toggleClass("is-active");
     $("#drawer").toggleClass("open");
