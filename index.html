@@ -16,83 +16,98 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-body bg-noise bg-repeat bg-primary text-white overflow-x-hidden">
+<style>
+    .bg-noise {
+        background-image: url("assets/images/noise-transparent-bg.png");
+        background-repeat: repeat;
+    }
+
+    .videothumbnail {
+        background-image: url("assets/images/VideoThumbnail1.png");
+        background-repeat: no-repeat;
+    }
+</style>
+
+<body class="font-body bg-noise bg-primary text-white overflow-x-hidden">
 
     <!-- Custom cursor pointer -->
     <div class="cursor hidden md:block z-50"></div>
 
     <div class="relative lg:overflow-x-hidden">
-        <header id='header'>
-            <div class="container mx-auto px-8 md:px-16 lg:px-14 flex justify-between py-12">
-                <a class="cursor-pointer my-auto" href="#index.html" title="buildnboost">
-                    <img src="./assets/images/logo/buildnboost-logo.svg" alt="buildnboost logo" class="h-6">
-                </a>
-                <div class="hamburger lg:hidden z-[60]" id="hamburger-1">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-                <ul class="hidden lg:flex text-lg leading-8 space-x-12 my-auto">
-                    <li class="font-medium cursor-pointer"> <a href="#fixme">Work</a> </li>
-                    <li class="font-medium cursor-pointer"> <a href="#fixme">About</a></li>
-                    <li class="font-medium cursor-pointer"> <a href="services.html">Services</a> </li>
-                    <li class="font-medium cursor-pointer"> <a href="#fixme">Products</a></li>
-                    <li class="font-medium cursor-pointer"> <a href="/contact-us">Contact</a></li>
-                </ul>
+        <div class="md:pb-32 pb-72">
+            <header>
+                <div class="container mx-auto px-8 md:px-16 lg:px-14 flex justify-between py-12">
+                    <a class="cursor-pointer my-auto" href="#index.html" title="buildnboost">
+                        <img src="./assets/images/logo/buildnboost-logo.svg" alt="buildnboost logo" class="h-6">
+                    </a>
+                    <div class="hamburger lg:hidden z-[60]" id="hamburger-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <ul class="hidden lg:flex text-lg leading-8 space-x-12 my-auto">
+                        <li class="font-medium cursor-pointer"> <a href="#fixme">Work</a> </li>
+                        <li class="font-medium cursor-pointer"> <a href="#fixme">About</a></li>
+                        <li class="font-medium cursor-pointer"> <a href="services.html">Services</a> </li>
+                        <li class="font-medium cursor-pointer"> <a href="#fixme">Products</a></li>
+                        <li class="font-medium cursor-pointer"> <a href="contact-us.html">Contact</a></li>
+                    </ul>
 
-                <nav class="fixed top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary z-50" id="drawer">
-                    <div class="md:hidden flex h-full flex-col justify-center text-4xl space-y-8 px-12">
-                        <span class="text-base text-gray-300">Menu</span>
-                        <ul class="flex flex-col justify-center text-4xl space-y-4 my-auto">
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="#fixme">Work</a>
-                            </li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="#fixme">About</a>
-                            </li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
-                                    href="services.html">Services</a></li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="#fixme">Products</a>
-                            </li>
-                            <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
-                                    href="/contact-us">Contact</a></li>
-                        </ul>
-                        <div class="flex flex-col">
-                            <span class="text-base text-gray-300">Get In Touch</span>
-                            <div>
-                                <a href="mailto:buildnboost@gmail.com"
-                                    class="p-2 bg-white text-black text-base rounded-sm hover:scale-125 duration-500">buildnboost@gmail.com</a>
+                    <nav class="fixed top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary z-50"
+                        id="drawer">
+                        <div class="md:hidden flex h-full flex-col justify-center text-4xl space-y-8 px-12">
+                            <span class="text-base text-gray-300">Menu</span>
+                            <ul class="flex flex-col justify-center text-4xl space-y-4 my-auto">
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="#fixme">Work</a>
+                                </li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="#fixme">About</a>
+                                </li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
+                                        href="services.html">Services</a></li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
+                                        href="#fixme">Products</a></li>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
+                                        href="contact-us.html">Contact</a></li>
+                            </ul>
+                            <div class="flex flex-col">
+                                <span class="text-base text-gray-300">Get In Touch</span>
+                                <div>
+                                    <a href="mailto:buildnboost@gmail.com"
+                                        class="p-2 bg-white text-black text-base rounded-sm hover:scale-125 duration-500">buildnboost@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <section
+                class="container mx-auto px-8 md:px-16 lg:px-14 grid lg:grid-cols-2 grid-cols-1 space-x-0 lg:space-x-12 h-auto">
+                <div class="mt-12 lg:mt-20 xl:mt-12">
+                    <span class="text-sm tracking-wide md:text-lg mt-4 md:mt-6">We design and develop</span>
+                    <h1 class="font-bold text-4xl  lg:text-7xl md:text-8xl xl:text-8xl mt-1 md:mt-2">Websites </h1>
+                    <h1 class="font-bold text-4xl  lg:text-8xl md:text-7xl xl:text-8xl  mt-1 md:mt-2">Mobile Apps </h1>
+                    <p class="text-lg  lg:text-2xl xl:text-3xl md:text-3xl mt-12">
+                        Full-service digital agency specialized in building websites & mobile apps for service based
+                        startups and business.</p>
+                </div>
+                <div class="group h-auto">
+                    <div
+                        class="relative lg:absolute w-full lg:w-[693px] mt-12 rounded-sm group items-center justify-center flex">
+                        <video autoplay loop muted playsinline preload="auto" class="rounded-sm">
+                            <source src="./assets/1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div
+                            class="absolute opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border-2 border-dashed border-primary rounded-full">
+                            <div
+                                class="duration-300 w-16 h-16 border rounded-full backdrop-filter backdrop-blur-lg flex items-center justify-center">
+                                <img src="./assets/images/icons/play-button.svg" alt="play" class="pl-1">
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
-
-        <section
-            class="relative container mx-auto px-8 md:px-16 lg:px-14 grid items-center lg:grid-cols-2 grid-cols-1 space-x-0 lg:space-x-12 set-height pb-12 md:pb-0">
-            <div>
-                <span class="text-sm tracking-wide md:text-lg mt-4 md:mt-6">We design and develop</span>
-                <h1 class="font-bold text-4xl  lg:text-7xl md:text-8xl xl:text-8xl mt-1 md:mt-2">Websites </h1>
-                <h1 class="font-bold text-4xl  lg:text-8xl md:text-7xl xl:text-8xl  mt-1 md:mt-2">Mobile Apps </h1>
-                <p class="text-lg lg:text-2xl xl:text-3xl md:text-3xl mt-4 md:mt-6 lg:mt-12">
-                    Full-service digital agency specialized in building websites & mobile apps for service based
-                    startups and business.</p>
-            </div>
-            <div class="group h-auto">
-                <div
-                    class="relative lg:absolute top-0 bottom-0 w-full lg:w-[693px] rounded-sm group items-center justify-center flex">
-                    <video autoplay loop muted playsinline preload="auto" class="rounded-sm">
-                        <source src="./assets/1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div
-                        class="absolute opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border-2 border-dashed border-primary rounded-full">
-                        <div
-                            class="duration-300 w-16 h-16 border rounded-full backdrop-filter backdrop-blur-lg flex items-center justify-center">
-                            <img src="./assets/images/icons/play-button.svg" alt="play" class="pl-1">
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 
     <!-- <section>
@@ -107,11 +122,10 @@
             <div class="flex-1 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-12 px-8 md:px-24 mt-12">
                 <div class="group flex flex-col">
                     <div
-                        class="aspect-w-3 aspect-h-2 flex items-center justify-center bg-red-200 rounded-lg hover:bg-opacity-20 duration-300 cursor-pointer overflow-hidden">
-                        <img src="./assets/images/twiddle.jpg" alt=""
-                            class="object-cover rounded-sm group-hover:scale-110 duration-300">
+                        class="aspect-w-3 aspect-h-2 flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
+                        <img src="./assets/images/twiddle.jpg" alt="" class="object-cover rounded-sm">
                         <div
-                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border-2 border-dashed border-primary rounded-full m-auto backdrop-filter backdrop-blur-lg">
+                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full m-auto">
                             <span class="font-medium text-sm">View<br />Case</span>
                         </div>
                     </div>
@@ -142,11 +156,10 @@
                 </div>
                 <div class="group flex flex-col">
                     <div
-                        class="aspect-w-3 aspect-h-2 flex items-center justify-center bg-red-200 rounded-lg hover:bg-opacity-20 duration-300 cursor-pointer overflow-hidden">
-                        <img src="./assets/images/twiddle.jpg" alt=""
-                            class="object-cover rounded-sm group-hover:scale-110 duration-300">
+                        class="aspect-w-3 aspect-h-2 flex items-center justify-center bg-red-200 h-[292px] rounded-lg group-hover:bg-gray-200 hover:bg-opacity-20 duration-300 cursor-pointer">
+                        <img src="./assets/images/twiddle.jpg" alt="" class="object-cover rounded-sm">
                         <div
-                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border-2 border-dashed border-primary rounded-full m-auto backdrop-filter backdrop-blur-lg">
+                            class="opacity-0 group-hover:opacity-100 duration-300 flex items-center justify-center w-20 h-20 border border-dashed border-primary rounded-full m-auto">
                             <span class="font-medium text-sm">View<br />Case</span>
                         </div>
                     </div>
@@ -169,13 +182,13 @@
         </div>
     </section> -->
 
-    <section class="bg-service text-black pt-12 pb-24">
+    <section class="bg-servicebg text-black py-20">
         <div class="flex flex-col justify-between py-12">
             <div class="flex flex-1 items-center space-x-6 pl-8 md:pl-24 pb-12">
                 <span class="text-3xl stroke-current">What We Do</span>
-                <div class="flex-1 bg-gray-200 opacity-70">
+                <!-- <div class="flex-1 bg-gray-200 opacity-70">
                     <hr class="border border-gray-400 opacity-70 w-1/2" />
-                </div>
+                </div> -->
             </div>
 
             <div
@@ -242,41 +255,39 @@
             <div class="container mx-auto md:mx-[60px] flex flex-col">
                 <div>
                     <span class="text-4xl md:text-7xl font-medium block">Got A Project?</span>
-                    <span class="text-4xl md:text-7xl border-b-2">Tell us about it</span>
+                    <span class="text-4xl md:text-7xl border-b-4">Tell us about it</span>
                 </div>
 
-                <div class="flex lg:justify-end mt-32 md:mt-24">
-                    <a class="text-lg md:text-xl underline"
-                        href="mailto:contact@buildnboost.com">contact@buildnboost.com</a>
+                <div class="flex lg:justify-end mt-[46px] md:mt-[92px]">
+                    <span class="text-lg md:text-xl underline">contact@buildnboost.com</span>
                 </div>
 
                 <div class="flex flex-col-reverse lg:flex-row justify-between lg:space-y-4 space-y-0 mt-[14px]">
                     <div class="flex flex-col space-y-6">
                         <span class="text-xl md:text-3xl font-bold lg:mt-0 mt-32">buildnboost.</span>
-                        <a class="text-xs md:text-sm font-medium opacity-70"
-                            href="http://maps.google.com/?q=7, Pearl Palace CHS, Agarkar Rd, Dombivli, India - 421201">7,
-                            Pearl Palace CHS, Agarkar Rd,<br />
-                            Dombivli, India - 421201</a>
+                        <span class="text-xs md:text-sm font-medium opacity-70">7, Pearl Palace CHS, Agarkar
+                            Rd,<br />Dombivli,
+                            India - 421201</span>
                         <a href="" class="text-xs md:text-sm font-medium opacity-70">Sitemap</a>
                     </div>
 
-                    <div class="grid items-center lg:grid-cols-4 grid-cols-2 gap-y-6 gap-x-12 ">
-                        <a href="https://www.facebook.com/BuildNBoost" target="_blank"
+                    <div class="grid lg:grid-cols-4 grid-cols-2 gap-y-6 gap-x-12 ">
+                        <a href="https://facebook.com" target="_blank"
                             class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Facebook</a>
-                        <a href="https://www.instagram.com/buildnboost" target="_blank"
+                        <a href="" target="_blank"
                             class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Instagram</a>
-                        <a href="https://twitter.com/buildnboost" target="_blank"
+                        <a href="" target="_blank"
                             class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Twitter</a>
-                        <!-- <a href="" target="_blank"
+                        <a href="" target="_blank"
                             class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">LinkedIn</a>
                         <a href="" target="_blank"
                             class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Dribble</a>
                         <a href="" target="_blank"
-                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Behance</a> -->
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Behance</a>
                         <a href="" target="_blank"
                             class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Youtube</a>
-                        <!-- <a href="" target="_blank"
-                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Medium</a> -->
+                        <a href="" target="_blank"
+                            class="text-lg md:text-xl font-medium duration-300 hover:text-blue-300">Medium</a>
                     </div>
                 </div>
             </div>
@@ -285,8 +296,42 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.easeScroll.js"></script>
+
     <script src="/assets/js/buildnboost.js"></script>
 
+    <script>
+        /* $("html").easeScroll();
+        $("html").easeScroll({
+            frameRate: 60,
+            animationTime: 1000,
+            stepSize: 120,
+            pulseAlgorithm: 1,
+            pulseScale: 8,
+            pulseNormalize: 1,
+            accelerationDelta: 20,
+            accelerationMax: 1,
+            keyboardSupport: true,
+            arrowScroll: 50,
+            touchpadSupport: true,
+            fixedBackground: true
+        }); */
+
+        // document.documentElement.style.cursor = 'none'; // uncomment this line to hide cursor
+        const cursor = document.querySelector('.cursor'); // Select cursor div
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 7) + "px;")
+        }, 100); // Follow mouse pointer
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        }); // trigger pointer onClick animation
+    </script>
 </body>
 
 </html>

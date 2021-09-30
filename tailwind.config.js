@@ -11,7 +11,7 @@ module.exports = {
         dark: {
           DEFAULT: "#111827",
         },
-        service: {
+        servicebg: {
           DEFAULT: "#f8fafc",
         },
 
@@ -21,7 +21,6 @@ module.exports = {
       },
 
       backgroundImage: {
-        noise: "url('/assets/images/noise-transparent-bg.png')",
         card: "linear-gradient(130deg, #2A2674 , #302B84)",
         "card-border":
           "linear-gradient(130deg, #ffffffAA, #2A2674, #2A2674, #ffffffAA)",
@@ -34,6 +33,7 @@ module.exports = {
         primary: {
           DEFAULT: "#111827",
         },
+        
       },
 
       fontFamily: {
