@@ -3,3 +3,5 @@ package-lock.json
 yarn.lock
 .vscode
 *.zip
+firebase-debug.log
+.firebase/hosting..cache
