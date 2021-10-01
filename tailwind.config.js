@@ -16,7 +16,7 @@ module.exports = {
         },
 
         serviceCards: {
-          DEFAULT: "#DBEAFE",
+          DEFAULT: "#E7E6F2",
         },
       },
 
