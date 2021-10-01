@@ -1,7 +1,6 @@
-ErrorDocument 404 http://www.buildnboost.com/404
+ErrorDocument 404 https://www.buildnboost.com/404.html
 
 RewriteEngine on
-
 
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
