@@ -52,60 +52,12 @@
 </head>
 
 <style>
-
-.example1 { 
-    height: 70px;
- overflow: hidden;
- position: relative;
+    .strokeheading{
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
-
-.strokeheading {
- font-size: 3em;
- color: blue;
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);  
- transform:translateX(100%);
- /* Apply animation to this element */  
- -moz-animation: example1 15s linear infinite;
- -webkit-animation: example1 15s linear infinite;
- animation: example1 15s linear infinite;
-}
-
-/* Move it (define the animation) */
-@-moz-keyframes example1 {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes example1 {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes example1 {
- 0%   { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%);     
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%); 
- }
-}
-
-    .strokeheading {
-        color: black;
-        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
-    }
 </style>
 
 <body class="font-body text-black overflow-x-hidden">
@@ -163,17 +115,13 @@
     </div>
 
     <section>
-        <div class="container mx-auto uppercase px-14 py-32 ">
+        <div class="container mx-auto uppercase px-14 py-32">
             <span class="text-sm md:text-lg tracking-wide">we are team of</span>
-            <div class=" example1 ">
-                <div class="strokeheading grid grid-cols-6 gap-x-12">
-                    <h3 class="text-4xl lg:text-7xl tracking-wider font-bold  mr-12">explores </h3>
-                    <h3 class="text-4xl lg:text-7xl tracking-wider font-bold  mr-12">thinkers </h3>
-                    <h3 class="text-4xl lg:text-7xl tracking-wider font-bold mr-12">doer </h3>
-                    <h3 class="text-4xl lg:text-7xl tracking-wider font-bold  mr-12">explores </h3>
-                    
-                </div>
-                
+            <p class="text-4xl lg:text-6xl tracking-wider font-bold mt-9">
+                <span class="strokeheading mr-12">Explorers </span> 
+                <span class="strokeheading mr-12">thinkers</span>
+                <span class="strokeheading mr-12">doers</span>
+            </p>
             </div>
         </div>
     </section>

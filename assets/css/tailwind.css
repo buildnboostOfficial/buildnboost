@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -701,10 +701,6 @@ video {
   --tw-aspect-w: 3;
 }
 
-.aspect-w-4 {
-  --tw-aspect-w: 4;
-}
-
 .aspect-h-2 {
   --tw-aspect-h: 2;
 }
@@ -783,6 +779,10 @@ video {
   margin-right: 6rem;
 }
 
+.mr-12 {
+  margin-right: 3rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -827,8 +827,8 @@ video {
   margin-bottom: 2rem;
 }
 
-.mr-12 {
-  margin-right: 3rem;
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .block {
@@ -837,6 +837,10 @@ video {
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -867,6 +871,10 @@ video {
   height: auto;
 }
 
+.h-\[25rem\] {
+  height: 25rem;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -885,14 +893,6 @@ video {
 
 .h-28 {
   height: 7rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[25rem\] {
-  height: 25rem;
 }
 
 .w-screen {
@@ -946,6 +946,10 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -956,10 +960,6 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1018,13 +1018,13 @@ video {
   gap: 2rem;
 }
 
-.gap-y-6 {
-  row-gap: 1.5rem;
-}
-
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
@@ -1045,16 +1045,16 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
 .space-y-40 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(10rem * var(--tw-space-y-reverse));
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
 .space-x-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1111,22 +1111,16 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-32 > :not([hidden]) ~ :not([hidden]) {
+.space-y-9 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(8rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(8rem * var(--tw-space-y-reverse));
+  margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-24 > :not([hidden]) ~ :not([hidden]) {
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
-}
-
-.space-y-16 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
 .overflow-x-hidden {
@@ -1344,6 +1338,15 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -1358,10 +1361,6 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
 }
 
 .pl-8 {
@@ -1476,10 +1475,6 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
 }
 
 .tracking-widest {
@@ -2088,6 +2083,11 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:leading-6 {
