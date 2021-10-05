@@ -116,33 +116,57 @@
 
     <section>
         <div class="container mx-auto uppercase px-14 py-32">
-            <span class="text-sm md:text-lg tracking-wide">we are team of</span>
-            <p class="text-4xl lg:text-6xl tracking-wider font-bold mt-9">
-                <span class="strokeheading mr-12">Explorers </span> 
-                <span class="strokeheading mr-12">thinkers</span>
-                <span class="strokeheading mr-12">doers</span>
+            <span class="text-base md:text-lg tracking-wide">we are team of</span>
+            <p class="text-3xl lg:text-6xl tracking-wider font-bold mt-6 md:flex">
+                <span class="strokeheading lg:mr-12 text-base lg:text-6xl md:mr-5 mr-3">Explorers</span> 
+                <span class="strokeheading lg:mr-12 text-base lg:text-6xl md:mr-5 mr-3">thinkers</span>
+                <span class="strokeheading lg:mr-12 text-base lg:text-6xl md:mr-5 mr-3">doers</span>
             </p>
             </div>
         </div>
     </section>
-    <section class="container mx-auto px-14 py-12 space-y-40">
-        <div class="grid grid-cols-2 gap-12">
-            <h2 class="uppercase text-base">who we are</h2>
-            <p class="text-4xl">We’re curious people driven by continuous learning and solving hard problems. We team up with leading technology and use powerful tech stacks to deliver better and innovative, best-in-class results for our clients business.</p>
+    <section class="container mx-auto px-14 md:py-10 lg:py-20 lg:space-y-48 space-y-40">
+        <div class="grid lg:grid-cols-3 md:grid-col-1 lg:gap-12 gap-6">
+            <h2 class="uppercase text-base ">who we are</h2>
+            <p class="text-2xl lg:text-4xl col-span-2">We’re curious people driven by continuous learning and solving hard problems. We team up with leading technology and use powerful tech stacks to deliver better and innovative, best-in-class results for our clients business.</p>
         </div>
-        <div class="grid grid-cols-2 gap-12">
+        <div class="grid lg:grid-cols-3 md:grid-col-1 lg:gap-12 gap-6">
             <h2 class="uppercase text-base">our goal</h2>
-            <p class="text-4xl">Since the day our company was founded in 2019, We strive to harmonize simple with complex, aesthetics with effective, and clarity with surprise. Our main goal is to focus on service-based startups or businesses who need a brand new website or want to redesign the already owned websites.</p>
+            <p class="text-2xl lg:text-4xl col-span-2">Since the day our company was founded in 2019, We strive to harmonize simple with complex, aesthetics with effective, and clarity with surprise. Our main goal is to focus on service-based startups or businesses who need a brand new website or want to redesign the already owned websites.</p>
         </div>
     </section>
 
-    <section class="container mx-auto px-14 py-12 pb-24 space-y-16">
-        <h1 class="font-bold text-6xl grid grid-cols-2">We take care of your projects</h1>
-        <p class="text-4xl">We deliver solutions that are at the intersection of business goals & user goals but are always led by great design.</p>
-        <p class="text-4xl">And your deadlines, and your nerves no matter what, and that’s a promise.</p>
-        <p class="text-4xl">In a world with no boundaries and has global experience of working with brands across the globe - Dubai, Oman, Nepal, Mumbai and are counting.</p>
-
+    <section class="container mx-auto px-14 py-28 space-y-16">
+        <h1 class="font-bold text-3xl md:text-5xl lg:text-7xl grid lg:grid-cols-2">We take care of your projects</h1>
+        <p class="text-2xl lg:text-4xl">We deliver solutions that are at the intersection of business goals & user goals but are always led by great design.</p>
+        <p class="text-2xl lg:text-4xl">And your deadlines, and your nerves no matter what, and that’s a promise.</p>
+        <p class="text-2xl lg:text-4xl">In a world with no boundaries and has global experience of working with brands across the globe - Dubai, Oman, Nepal, Mumbai and are counting.</p>
     </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.easeScroll.js"></script>
+
+    <script src="/assets/js/buildnboost.js"></script>
+
+    <script>
+
+        // document.documentElement.style.cursor = 'none'; // uncomment this line to hide cursor
+        const cursor = document.querySelector('.cursor'); // Select cursor div
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 7) + "px;")
+        }, 100); // Follow mouse pointer
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        }); // trigger pointer onClick animation
+    </script>
     </body>
 
     </html>
