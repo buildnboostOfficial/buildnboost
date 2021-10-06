@@ -52,11 +52,6 @@
 </head>
 
 <style>
-    .bg-noise {
-        background-image: url("assets/images/noise-transparent-bg.png");
-        background-repeat: repeat;
-    }
-
     .videothumbnail {
         background-image: url("assets/images/VideoThumbnail1.png");
         background-repeat: no-repeat;
@@ -65,9 +60,6 @@
 
 <body class="font-body bg-noise bg-primary text-white overflow-x-hidden">
 
-    <!-- Custom cursor pointer -->
-    <div class="cursor hidden md:block z-50"></div>
-
     <div class="relative lg:overflow-x-hidden">
         <div class="md:pb-32 pb-72">
             <header>
@@ -75,7 +67,7 @@
                     <a class="cursor-pointer my-auto" href="index.html" title="buildnboost">
                         <img src="./assets/images/logo/buildnboost-logo.svg" alt="buildnboost logo" class="h-6">
                     </a>
-                    <div class="hamburger lg:hidden z-50" id="hamburger-1">
+                    <div class="hamburger lg:hidden z-[70]" id="hamburger-1">
                         <span class="line"></span>
                         <span class="line"></span>
                     </div>
@@ -87,13 +79,15 @@
                         <li class="font-medium cursor-pointer"> <a href="contact-us.html">Contact</a></li>
                     </ul>
 
-                    <nav class=" absolute top-0 bottom-0 -right-full hidden bg-primary" id="drawer">
+                    <nav class="fixed top-0 bottom-0 -right-full w-full bg-primary z-[60]" id="drawer">
                         <div class="md:hidden flex h-full flex-col justify-center text-4xl space-y-8 px-12">
                             <span class="text-base text-gray-300">Menu</span>
                             <ul class="flex flex-col justify-center text-4xl space-y-4 my-auto">
-                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="work.html">Work</a>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
+                                        href="work.html">Work</a>
                                 </li>
-                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="about.html">About</a>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
+                                        href="about.html">About</a>
                                 </li>
                                 <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
                                         href="services.html">Services</a></li>
@@ -117,7 +111,7 @@
         </div>
     </div>
 
-    <section class="bg-servicebg text-black py-20">
+    <section class="bg-servicebg text-black py-20 dark-cursor">
         <div class="flex flex-col justify-between py-12 container mx-auto">
             <div class="flex flex-col items-center justify-center mx-auto space-x-6 pl-8 md:pl-24 pb-12">
                 <!-- <span class="text-3xl font-bold capitalize">services</span> -->
@@ -137,7 +131,8 @@
                     <div class="h-full flex flex-col justify-center space-y-6 bg-serviceCards rounded-lg py-12 px-6">
                         <img src="./assets/images/icons/PC11.svg" alt="" class="w-20">
                         <span class="font-bold text-3xl">Web Development</span>
-                        <p class="text-sm leading-6 tracking-wide">We build sites that work for your business and your users — be it a complex eCommerce platform, a progressive web app, or a marketing site.</p>
+                        <p class="text-sm leading-6 tracking-wide">We build sites that work for your business and your
+                            users — be it a complex eCommerce platform, a progressive web app, or a marketing site.</p>
                         <a href="#FIXME" title="know more" class="text-base">Know More</a>
                     </div>
                 </div>
@@ -145,7 +140,9 @@
                     <div class="h-full flex flex-col justify-center space-y-6 bg-serviceCards rounded-lg py-12 px-6">
                         <img src="./assets/images/icons/PC11.svg" alt="" class="w-20">
                         <span class="font-bold text-3xl">App Development</span>
-                        <p class="text-sm leading-6 tracking-wide">With expertise in native and hybrid mobile development, We can build robust, fully scalable, and secure enterprise-grade applications that connect your business with people.</p>
+                        <p class="text-sm leading-6 tracking-wide">With expertise in native and hybrid mobile
+                            development, We can build robust, fully scalable, and secure enterprise-grade applications
+                            that connect your business with people.</p>
                         <a href="#FIXME" title="know more" class="text-base">Know More</a>
                     </div>
                 </div>
@@ -153,7 +150,9 @@
                     <div class="h-full flex flex-col justify-center space-y-6 bg-serviceCards rounded-lg py-12 px-6">
                         <img src="./assets/images/icons/PC11.svg" alt="" class="w-20">
                         <span class="font-bold text-3xl">E-commerce Solution</span>
-                        <p class="text-sm leading-6 tracking-wide">We can bring your online business to the next level by creating high-quality custom eCommerce applications using Laravel PHP, MongoDB, and React js.</p>
+                        <p class="text-sm leading-6 tracking-wide">We can bring your online business to the next level
+                            by creating high-quality custom eCommerce applications using Laravel PHP, MongoDB, and React
+                            js.</p>
                         <a href="#FIXME" title="know more" class="text-base">Know More</a>
                     </div>
                 </div>
@@ -192,11 +191,13 @@
             <div class="container mx-auto md:mx-[60px] flex flex-col">
                 <div>
                     <span class="text-4xl md:text-7xl font-medium block">Got A Project?</span>
-                    <a href="./contact-us.html" title="tell us about it" class="text-4xl md:text-7xl border-b-4">Tell us about it</a>
+                    <a href="./contact-us.html" title="tell us about it" class="text-4xl md:text-7xl border-b-4">Tell us
+                        about it</a>
                 </div>
 
                 <div class="flex lg:justify-end mt-[46px] md:mt-[92px]">
-                    <a href="mailto:contact@buildnboost.com" class="text-lg md:text-xl underline">contact@buildnboost.com</a>
+                    <a href="mailto:contact@buildnboost.com"
+                        class="text-lg md:text-xl underline">contact@buildnboost.com</a>
                 </div>
 
                 <div class="flex flex-col-reverse lg:flex-row justify-between lg:space-y-4 space-y-0 mt-[14px]">
@@ -231,56 +232,11 @@
         </section>
     </footer>
 
+    <div class="cursor hidden md:block z-50"></div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script src="./assets/js/jquery.easeScroll.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            var height = $(window).height();
-
-            $(".set-height").css("height", height - 100);
-
-            $(".hamburger").click(function () {
-                $(this).toggleClass("is-active");
-                $('#drawer').toggleClass("open");
-            });
-        }); // trigger hamburger animation and toggle drawer state
-    </script>
-
-    <script>
-        $("html").easeScroll();
-        /* $("html").easeScroll({
-            frameRate: 60,
-            animationTime: 1000,
-            stepSize: 120,
-            pulseAlgorithm: 1,
-            pulseScale: 8,
-            pulseNormalize: 1,
-            accelerationDelta: 20,
-            accelerationMax: 1,
-            keyboardSupport: true,
-            arrowScroll: 50,
-            touchpadSupport: true,
-            fixedBackground: true
-        }); */
-
-        // document.documentElement.style.cursor = 'none'; // uncomment this line to hide cursor
-        const cursor = document.querySelector('.cursor'); // Select cursor div
-
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 7) + "px;")
-        }, 100); // Follow mouse pointer
-
-        document.addEventListener('click', () => {
-            cursor.classList.add("expand");
-
-            setTimeout(() => {
-                cursor.classList.remove("expand");
-            }, 500)
-        }); // trigger pointer onClick animation
-    </script>
+    <script src="/assets/js/buildnboost.js"></script>
 </body>
 
 </html>

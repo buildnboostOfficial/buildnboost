@@ -18,4 +18,26 @@ $(document).ready(function () {
       100
     );
   });
+
+  // document.documentElement.style.cursor = 'none'; // uncomment this line to hide cursor
+  const cursor = document.querySelector(".cursor"); // Select cursor div
+
+  document.addEventListener(
+    "mousemove",
+    (e) => {
+      cursor.setAttribute(
+        "style",
+        "top: " + (e.pageY - 7) + "px; left: " + (e.pageX - 7) + "px;"
+      );
+    },
+    100
+  ); // Follow mouse pointer
+
+  document.addEventListener("click", () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+      cursor.classList.remove("expand");
+    }, 500);
+  }); // trigger pointer onClick animation
 });

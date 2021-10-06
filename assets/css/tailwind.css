@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.8 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -760,6 +760,14 @@ video {
   z-index: 40;
 }
 
+.z-\[80\] {
+  z-index: 80;
+}
+
+.z-\[70\] {
+  z-index: 70;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -781,11 +789,6 @@ video {
 .mx-24 {
   margin-left: 6rem;
   margin-right: 6rem;
-}
-
-.mx-\[60px\] {
-  margin-left: 60px;
-  margin-right: 60px;
 }
 
 .mt-6 {
@@ -1235,12 +1238,20 @@ video {
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
 
+.bg-noise {
+  background-image: url('/assets/images/noise-transparent-bg.png');
+}
+
 .bg-card-border {
   background-image: linear-gradient(130deg, #ffffffAA, #2A2674, #2A2674, #ffffffAA);
 }
 
 .bg-card {
   background-image: linear-gradient(130deg, #2A2674 , #302B84);
+}
+
+.bg-repeat {
+  background-repeat: repeat;
 }
 
 .stroke-current {
@@ -1690,13 +1701,6 @@ video {
   color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:mx-\[60px\] {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:mx-\[60px\] {
     margin-left: 60px;
@@ -1791,10 +1795,6 @@ video {
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:justify-end {
-    justify-content: flex-end;
   }
 
   .md\:justify-between {
@@ -2111,11 +2111,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:mx-\[60px\] {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
   .xl\:mt-12 {
     margin-top: 3rem;
   }

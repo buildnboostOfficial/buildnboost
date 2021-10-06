@@ -52,25 +52,18 @@
 </head>
 
 <style>
-    .strokeheading{
-  color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-@media  only screen and (max-width: 768px) {
-  .hamburger  .line {
-    background-color: black !important;
-  }
-}
-
+    .strokeheading {
+        color: black;
+        -webkit-text-fill-color: white;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
 </style>
 
 <body class="font-body text-black overflow-x-hidden">
 
-   <!-- Custom cursor pointer -->
-   <div class="cursor bg-primary hidden md:block z-50"></div>
+    <div class="cursor bg-primary hidden md:block z-50"></div>
 
     <div class="relative lg:overflow-x-hidden">
         <div>
@@ -79,9 +72,9 @@
                     <a class="cursor-pointer my-auto" href="index.html" title="buildnboost">
                         <img src="./assets/images/logo/buildnboost-logo-primary.svg" alt="buildnboost logo" class="h-6">
                     </a>
-                    <div class="hamburger lg:hidden z-[60]" id="hamburger-1">
-                        <span class="line hamblack"></span>
-                        <span class="line hamblack"></span>
+                    <div class="hamburger lg:hidden z-[70]" id="hamburger-1">
+                        <span class="line" style="background-color: #0A047A;"></span>
+                        <span class="line" style="background-color: #0A047A;"></span>
                     </div>
                     <ul class="hidden lg:flex text-lg leading-8 space-x-12 my-auto">
                         <li class="font-medium cursor-pointer"> <a href="work.html">Work</a> </li>
@@ -91,14 +84,15 @@
                         <li class="font-medium cursor-pointer"> <a href="contact-us.html">Contact</a></li>
                     </ul>
 
-                    <nav class="fixed top-0 bottom-0 -right-full w-screen h-screen md:hidden bg-primary z-50"
-                        id="drawer">
+                    <nav class="fixed top-0 bottom-0 -right-full w-screen h-screen bg-primary z-[60]" id="drawer">
                         <div class="md:hidden flex h-full flex-col justify-center text-4xl space-y-8 px-12">
                             <span class="text-base text-gray-300">Menu</span>
-                            <ul class="flex flex-col justify-center text-4xl space-y-4 my-auto">
-                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="work.html">Work</a>
+                            <ul class="flex flex-col justify-center text-white text-4xl space-y-4 my-auto">
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
+                                        href="work.html">Work</a>
                                 </li>
-                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a href="about.html">About</a>
+                                <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
+                                        href="about.html">About</a>
                                 </li>
                                 <li class="hover:text-blue-300 duration-300 cursor-pointer"> <a
                                         href="services.html">Services</a></li>
@@ -125,29 +119,37 @@
         <div class="container mx-auto uppercase px-8 lg:px-14 py-32">
             <span class="text-base md:text-lg tracking-wide">we are team of</span>
             <p class="text-3xl lg:text-6xl tracking-wider font-bold mt-6 md:flex">
-                <span class="strokeheading lg:mr-12 text-base md:text-5xl lg:text-6xl md:mr-5 mr-3">Explorers</span> 
+                <span class="strokeheading lg:mr-12 text-base md:text-5xl lg:text-6xl md:mr-5 mr-3">Explorers</span>
                 <span class="strokeheading lg:mr-12 text-base md:text-5xl lg:text-6xl md:mr-5 mr-3">thinkers</span>
                 <span class="strokeheading lg:mr-12 text-base md:text-5xl lg:text-6xl md:mr-5 mr-3">doers</span>
             </p>
-            </div>
+        </div>
         </div>
     </section>
+
     <section class="container mx-auto px-8 lg:px-14 md:py-10 lg:py-20 lg:space-y-48 space-y-40">
         <div class="grid lg:grid-cols-3 md:grid-col-1 lg:gap-12 gap-6">
             <h2 class="uppercase text-base ">who we are</h2>
-            <p class="text-2xl lg:text-4xl col-span-2">We’re curious people driven by continuous learning and solving hard problems. We team up with leading technology and use powerful tech stacks to deliver better and innovative, best-in-class results for our clients business.</p>
+            <p class="text-2xl lg:text-4xl col-span-2">We’re curious people driven by continuous learning and solving
+                hard problems. We team up with leading technology and use powerful tech stacks to deliver better and
+                innovative, best-in-class results for our clients business.</p>
         </div>
         <div class="grid lg:grid-cols-3 md:grid-col-1 lg:gap-12 gap-6">
             <h2 class="uppercase text-base">our goal</h2>
-            <p class="text-2xl lg:text-4xl col-span-2">Since the day our company was founded in 2019, We strive to harmonize simple with complex, aesthetics with effective, and clarity with surprise. Our main goal is to focus on service-based startups or businesses who need a brand new website or want to redesign the already owned websites.</p>
+            <p class="text-2xl lg:text-4xl col-span-2">Since the day our company was founded in 2019, We strive to
+                harmonize simple with complex, aesthetics with effective, and clarity with surprise. Our main goal is to
+                focus on service-based startups or businesses who need a brand new website or want to redesign the
+                already owned websites.</p>
         </div>
     </section>
 
     <section class="container mx-auto px-8 lg:px-14 py-28 space-y-16">
         <h1 class="font-bold text-5xl lg:text-7xl grid lg:grid-cols-2">We take care of your projects</h1>
-        <p class="text-2xl lg:text-4xl">We deliver solutions that are at the intersection of business goals & user goals but are always led by great design.</p>
+        <p class="text-2xl lg:text-4xl">We deliver solutions that are at the intersection of business goals & user goals
+            but are always led by great design.</p>
         <p class="text-2xl lg:text-4xl">And your deadlines, and your nerves no matter what, and that’s a promise.</p>
-        <p class="text-2xl lg:text-4xl">In a world with no boundaries and has global experience of working with brands across the globe - Dubai, Oman, Nepal, Mumbai and are counting.</p>
+        <p class="text-2xl lg:text-4xl">In a world with no boundaries and has global experience of working with brands
+            across the globe - Dubai, Oman, Nepal, Mumbai and are counting.</p>
     </section>
 
 
@@ -155,7 +157,28 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/jquery.easeScroll.js"></script>
 
-    <script src="/assets/js/buildnboost.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+                $('#drawer').toggleClass("open");
+                $('body').toggleClass("scroll-lock");
+
+                var line = document.getElementsByClassName('line')[0];
+                var line_1 = document.getElementsByClassName('line')[1];
+                if (line.style.backgroundColor === 'rgb(10, 4, 122)') {
+                    line.style.backgroundColor = 'white';
+                } else {
+                    line.style.backgroundColor = 'rgb(10, 4, 122)';
+                }
+                if (line_1.style.backgroundColor === 'rgb(10, 4, 122)') {
+                    line_1.style.backgroundColor = 'white';
+                } else {
+                    line_1.style.backgroundColor = 'rgb(10, 4, 122)';
+                }
+            });
+        }); // trigger hamburger animation and toggle drawer state
+    </script>
 
     <script>
 
@@ -174,6 +197,6 @@
             }, 500)
         }); // trigger pointer onClick animation
     </script>
-    </body>
+</body>
 
-    </html>
+</html>
