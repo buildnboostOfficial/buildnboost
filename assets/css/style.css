@@ -29,6 +29,8 @@ html {
   transition: all 500ms ease-in-out;
 }
 
+
+
 .hamburger:hover {
   cursor: pointer;
 }

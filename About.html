@@ -58,6 +58,20 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+/* @media only screen and (min-width: 768px) {
+    .hamblack {
+    background-color: black;
+  }
+} */
+
+@media  only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .hamburger  .line {
+    background-color: black !important;
+  }
+}
+
 </style>
 
 <body class="font-body text-black overflow-x-hidden">
@@ -73,8 +87,8 @@
                         <img src="./assets/images/logo/buildnboost-logo-primary.svg" alt="buildnboost logo" class="h-6">
                     </a>
                     <div class="hamburger lg:hidden z-[60]" id="hamburger-1">
-                        <span class="line"></span>
-                        <span class="line"></span>
+                        <span class="line hamblack"></span>
+                        <span class="line hamblack"></span>
                     </div>
                     <ul class="hidden lg:flex text-lg leading-8 space-x-12 my-auto">
                         <li class="font-medium cursor-pointer"> <a href="#fixme">Work</a> </li>
@@ -115,17 +129,17 @@
     </div>
 
     <section>
-        <div class="container mx-auto uppercase px-14 py-32">
+        <div class="container mx-auto uppercase px-8 lg:px-14 py-32">
             <span class="text-base md:text-lg tracking-wide">we are team of</span>
             <p class="text-3xl lg:text-6xl tracking-wider font-bold mt-6 md:flex">
-                <span class="strokeheading lg:mr-12 text-base lg:text-6xl md:mr-5 mr-3">Explorers</span> 
-                <span class="strokeheading lg:mr-12 text-base lg:text-6xl md:mr-5 mr-3">thinkers</span>
-                <span class="strokeheading lg:mr-12 text-base lg:text-6xl md:mr-5 mr-3">doers</span>
+                <span class="strokeheading lg:mr-12 text-base md:text-5xl lg:text-6xl md:mr-5 mr-3">Explorers</span> 
+                <span class="strokeheading lg:mr-12 text-base md:text-5xl lg:text-6xl md:mr-5 mr-3">thinkers</span>
+                <span class="strokeheading lg:mr-12 text-base md:text-5xl lg:text-6xl md:mr-5 mr-3">doers</span>
             </p>
             </div>
         </div>
     </section>
-    <section class="container mx-auto px-14 md:py-10 lg:py-20 lg:space-y-48 space-y-40">
+    <section class="container mx-auto px-8 lg:px-14 md:py-10 lg:py-20 lg:space-y-48 space-y-40">
         <div class="grid lg:grid-cols-3 md:grid-col-1 lg:gap-12 gap-6">
             <h2 class="uppercase text-base ">who we are</h2>
             <p class="text-2xl lg:text-4xl col-span-2">We’re curious people driven by continuous learning and solving hard problems. We team up with leading technology and use powerful tech stacks to deliver better and innovative, best-in-class results for our clients business.</p>
@@ -136,8 +150,8 @@
         </div>
     </section>
 
-    <section class="container mx-auto px-14 py-28 space-y-16">
-        <h1 class="font-bold text-3xl md:text-5xl lg:text-7xl grid lg:grid-cols-2">We take care of your projects</h1>
+    <section class="container mx-auto px-8 lg:px-14 py-28 space-y-16">
+        <h1 class="font-bold text-5xl lg:text-7xl grid lg:grid-cols-2">We take care of your projects</h1>
         <p class="text-2xl lg:text-4xl">We deliver solutions that are at the intersection of business goals & user goals but are always led by great design.</p>
         <p class="text-2xl lg:text-4xl">And your deadlines, and your nerves no matter what, and that’s a promise.</p>
         <p class="text-2xl lg:text-4xl">In a world with no boundaries and has global experience of working with brands across the globe - Dubai, Oman, Nepal, Mumbai and are counting.</p>
