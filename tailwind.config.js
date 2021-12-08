@@ -1,12 +1,12 @@
 module.exports = {
   mode: "jit",
-  purge: ["./*.html"],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#0A047A",
+          DEFAULT: "#0A047A !important",
         },
         dark: {
           DEFAULT: "#111827",

@@ -5,3 +5,7 @@ yarn.lock
 *.zip
 firebase-debug.log
 .firebase/hosting..cache
+.env.local
+.next
+out
+.firebase

@@ -1,0 +1,50 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\rajde\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add next react react-dom
+
+PATH: 
+  C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\rajde\AppData\Local\Microsoft\WindowsApps;C:\Users\rajde\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rajde\AppData\Roaming\npm;C:\Users\rajde\AppData\Local\GitHubDesktop\bin;C:\Users\rajde\.dotnet\tools;C:\Users\rajde\AppData\Roaming\Composer\vendor\bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.5
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, open 'C:\Users\rajde\AppData\Local\Yarn\Cache\v6\npm-@next-swc-win32-x64-msvc-12.0.2-5eb3f054395fb2b1c57b981c446df17d0507febd-integrity\node_modules\@next\swc-win32-x64-msvc\.yarn-metadata.json'
+
+npm manifest: 
+  {
+      "name": "esynergies",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "lint": "next lint"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+          "autoprefixer": "^10.2.6",
+          "postcss": "^8.3.5",
+          "prettier-plugin-tailwind-css": "^1.5.0",
+          "tailwindcss": "^2.2.4"
+      },
+      "dependencies": {
+          "@tailwindcss/aspect-ratio": "^0.2.1",
+          "firebase-tools": "^9.19.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
